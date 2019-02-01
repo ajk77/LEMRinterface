@@ -11,13 +11,13 @@ using eye-tracking on a web-based interface (see https://github.com/ajk77/EyeBro
 
 ### Prerequisites
 
-Bitnami Django (https://bitnami.com/stack/django/installer).</ p>
-MySQl database or equivalent.</ p>
+Bitnami Django (https://bitnami.com/stack/django/installer).<br />
+MySQl database or equivalent.<br />
 Access to de-identified patient data, such as MIMIC (https://mimic.physionet.org/).
 
 ### Installing
 
-After downloading this repositiory, perform the folowing steps:</ br>
+After downloading this repositiory, perform the folowing steps:<br />
 1. Database connections
 In "/LEMRinterface/WebEmrProject/settings.py" updated DATABASES{} to reflect your databased.
 2. Set SECRET_Key
