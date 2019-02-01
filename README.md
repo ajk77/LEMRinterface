@@ -11,23 +11,23 @@ using eye-tracking on a web-based interface (see https://github.com/ajk77/Patien
 
 ### Prerequisites
 
-Bitnami Django (https://bitnami.com/stack/django/installer).</ br>
-MySQl database or equivalent.</ br>
+Bitnami Django (https://bitnami.com/stack/django/installer).
+MySQl database or equivalent.
 Access to de-identified patient data, such as MIMIC (https://mimic.physionet.org/).
 
 ### Installing
 
 After downloading this repositiory, perform the folowing steps:</ br>
 1. Database connections
-In "/LEMRinterface/WebEmrProject/settings.py" updated DATABASES{} to reflect your databased. </ br>
+In "/LEMRinterface/WebEmrProject/settings.py" updated DATABASES{} to reflect your databased.
 2. Set SECRET_Key
-In "/LEMRinterface/WebEmrProject/settings.py" set you own SECRET_KEY.</ br>
+In "/LEMRinterface/WebEmrProject/settings.py" set you own SECRET_KEY.
 3. Update database definitions in "/LEMRinterface/WebEmrGui/models.py" to reflect the organization of your patient
-data.</ br>
+data.
 4. Create supporting file structure
-Move the models directory to two levels up in your directory hierarchy (i.e. "../../models/").</ br>
-5. Read README files in models directory. These give give you an idea of the supporting files you must create.</ br>
-6. Update ""/LEMRinterface/WebEmrGui/loaddata.py" to reflect the organization of your patient data.</ br>
+Move the models directory to two levels up in your directory hierarchy (i.e. "../../models/").
+5. Read README files in models directory. These give give you an idea of the supporting files you must create.
+6. Update ""/LEMRinterface/WebEmrGui/loaddata.py" to reflect the organization of your patient data.
 7. Dig in and debug as errors come up. It may take a significant amount of ETL coding. I recommend starting small. See
 if you can get the interface to load with no patient data. Then get it to load with just patient demographic data.
 
@@ -37,9 +37,9 @@ Viewing (https://github.com/ajk77/PatientPy) and (https://github.com/ajk77/EyeBr
 
 ### Deployment
 
-open Bitnami Django Stack Environment with use_djangostack.bat</ br>
-cd into your project directory</ br>
-enter>python manage.py runserver</ br>
+open Bitnami Django Stack Environment with use_djangostack.bat
+cd into your project directory
+enter>python manage.py runserver
 open web browser to http://127.0.0.1:8000/WebEmrGui/
 
 #### Note
@@ -53,8 +53,8 @@ Version 1.0. For the versions available, see https://github.com/ajk77/LEMRinterf
 
 ## Authors
 
-Andrew J King - Doctoral Candidate (at time of creation)<br />
-Shyam Visweswaran - Principal Investigator<br />
+Andrew J King - Doctoral Candidate (at time of creation)
+Shyam Visweswaran - Principal Investigator
 Gregory F Cooper - Doctoral Advisor
 
 ## License
