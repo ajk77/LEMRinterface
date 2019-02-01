@@ -4,7 +4,8 @@ A Learning Electronic Medical Record (LEMR) interface. This code can be used for
 
 ## Getting Started
 
-First, have a look in the screenshots directory to become familiar with the interface design. </ br>
+First, have a look in the screenshots directory to become familiar with the interface design. 
+
 This code may benefit those interested in either conducting electronic medical record research or those interested in
 using eye-tracking on a web-based interface (see https://github.com/ajk77/PatientPyFeatureSelection).
 
