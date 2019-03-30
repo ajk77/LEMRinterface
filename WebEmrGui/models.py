@@ -1,3 +1,28 @@
+"""
+WebEmrGui/models.py
+version 1.0
+package github.com/ajk77/LEMRinterface
+Modified by AndrewJKing.com|@andrewsjourney
+
+This file is to assist with connecting to the databases specified in WebEmrProject/setting.py. 
+
+---LICENSE---
+This file is part of LEMRinterface
+
+LEMRinterface is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or 
+any later version.
+
+LEMRinterface is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with LEMRinterface.  If not, see <https://www.gnu.org/licenses/>.
+"""
+
 # models for local_lemr and crisma server's learningemr
 # notes are stored locally
 
