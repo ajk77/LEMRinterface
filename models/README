@@ -1,9 +1,0 @@
->This directory is meant to demonstrate directory structure. It is recommended that you create this directory structure
-two levels up, i.e., "../../models/". You will see a global parameter in some of the files called "local_dir". local_dir
-should point to where ever you store your models directory.
-
->all_processed_notes/ contains all the notes.
-
->audio_recordings/, eye_stream/, interaction_stream/, manual_input/, notemaps/, and pixelmaps/ all store study data
-temporarily. After a user is done interacting with the system, the data are moved into the eye_tracking folder. See
-eye_tracking/interface_demo/ for examples.

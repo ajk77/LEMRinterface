@@ -2,10 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64ca1dd6-3523-4e31-8bb8-40700e8464f3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/LEMRinterface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LEMRinterface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/calibrated_summary_bivariate-gen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33682264_1518048567.15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33682264_1518048573.64.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33704704_1518048536.73.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33704704_1518048544.42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33743133_1518048582.37.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33743133_1518048587.42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/calibration_1518048514.75.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33682264_1518048571.76-1518048572.52_task-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33682264_1518048578.3-1518048579.11_task-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33682264_1518048579.11-1518048580.19_task-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33682264_1518048580.19-1518048581.27_task-4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048540.09-1518048544.28_task-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048547.8-1518048552.46_task-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048552.46-1518048556.29_task-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048556.29-1518048559.3_task-4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048559.3-1518048567.04_task-5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048585.58-1518048587.31_task-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048594.13-1518048598.54_task-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048598.54-1518048600.02_task-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048600.02-1518048601.94_task-4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048602.25-1518048604.78_task-6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048604.78-1518048606.79_task-7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/manual_input/pat_33682264.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/manual_input/pat_33704704.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/manual_input/pat_33743133.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/notemaps/pat_33682264.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/notemaps/pat_33704704.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/notemaps/pat_33743133.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/pixelmaps/pat_33682264.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/pixelmaps/pat_33704704.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/pixelmaps/pat_33743133.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/pixelmaps/pat_calibration.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/calibrated_summary_bivariate-gen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33682264_1518048869.1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33682264_1518048875.64.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33704704_1518048849.55.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33704704_1518048854.19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33704704_1518048860.34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33743133_1518048890.99.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33743133_1518048895.77.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/calibration_1518048828.2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33682264_1518048873.82-1518048874.55_task-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33682264_1518048880.24-1518048881.12_task-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33682264_1518048881.12-1518048882.67_task-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33682264_1518048882.67-1518048890.91_task-4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33704704_1518048853.26-1518048854.1_task-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33704704_1518048857.9-1518048860.27_task-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048893.88-1518048894.68_task-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048898.36-1518048899.24_task-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048899.24-1518048900.39_task-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048900.39-1518048902.57_task-4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048902.88-1518048903.9_task-6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048903.9-1518048905.77_task-7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/manual_input/pat_33682264.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/manual_input/pat_33704704.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/manual_input/pat_33743133.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/notemaps/pat_33682264.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/notemaps/pat_33704704.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/notemaps/pat_33743133.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/pixelmaps/pat_33682264.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/pixelmaps/pat_33704704.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/pixelmaps/pat_33743133.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/pixelmaps/pat_calibration.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/participant_info/interface_demo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluation_study/participant_info/participant_info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/eye_tests/4_pixel.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,60 +81,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebEmrGui/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="4_pixel.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/eye_tests/4_pixel.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eye_tracking_scripts.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebEmrGui/eye_tracking_scripts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="loaddata.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebEmrGui/loaddata.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#16#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebEmrGui/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -74,46 +110,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="54" />
-    <option name="y" value="-8" />
-    <option name="width" value="1234" />
-    <option name="height" value="1040" />
+    <option name="x" value="92" />
+    <option name="y" value="-9" />
+    <option name="width" value="1838" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
@@ -129,11 +142,19 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/LEMR/Modeling" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Bitnami Django Stack projects/LEMR" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -154,6 +175,7 @@
   </component>
   <component name="RunManager">
     <configuration name="LEMRinterface" type="Python.DjangoServer" factoryName="Django server">
+      <module name="LEMRinterface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -164,7 +186,6 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="LEMRinterface" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -174,12 +195,10 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method v="2" />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
-  <component name="SvnConfiguration" myUseAcceleration="nothing">
+  <component name="SvnConfiguration">
     <configuration useDefault="false">C:\Users\ajk77\AppData\Roaming\Subversion</configuration>
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
   </component>
@@ -190,183 +209,62 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549056622482</updated>
+      <workItem from="1566322734641" duration="704000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="704000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1234" height="1040" extended-state="6" />
+    <frame x="74" y="-7" width="1470" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" order="0" visible="true" weight="0.25283286" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/WebEmrGui/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/eye_tests/4_pixel.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/loaddata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/eye_tracking_scripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/loaddata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/eye_tracking_scripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/eye_tests/4_pixel.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/loaddata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/eye_tracking_scripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/eye_tests/4_pixel.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/views.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/eye_tests/4_pixel.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebEmrGui/eye_tracking_scripts.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebEmrGui/loaddata.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebEmrGui/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
