@@ -38,12 +38,14 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^(?P<patient_id>\d+)/$', views.detail, name='detail'),
     url(r'^home/(?P<user_id>\w+)/$', views.index, name='index'),
     url(r'^(?P<patient_id>\d+)/(?P<user_id>\w+)/$', views.detail, name='detail'),
+    url(r'^(?P<patient_id>\d+)/(?P<user_id>\w+)/(?P<time_cutoff>\d+)/$', views.detail, name='detail'),
     url(r'^(?P<patient_id>\d+)/(?P<user_id>\w+)/(?P<time_cutoff>\d+)/(?P<previous_patient_id>\d+)/$',
         views.detail, name='detail'),
     url(r'^save_input/$', views.save_input, name='save_input'),
-    url(r'^end/(?P<user_id>\w+)/1/(?P<previous_patient_id>\d+)/', views.end_of_study, name='end'),
+    url(r'^end/(?P<user_id>\w+)/1/$', views.end_of_study, name='end_of_study'),
     url(r'^load_cases/$', views.loadcasedata, name='load_cases')
     ]
 # The .* catches all the special cases for lab names

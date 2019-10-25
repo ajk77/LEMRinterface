@@ -27,19 +27,18 @@ from django.template import loader
 from django.views.decorators.csrf import ensure_csrf_cookie
 from LEMRinterface.loaddata import *
 from LEMRinterface.utils import load_med_maps
-import pickle
 import os.path
 import json
 
 # Global variables
-local_dir = os.path.join(os.getcwd(), "Resources\\")
+local_dir = os.path.join(os.getcwd(), "resources")
 
 
-def index(request):
+def index(request, user_id=False):
     print(request.path_info)
-    dir_part_info = os.path.join(local_dir, 'demo_study/participant_info/')
+    dir_part_info = os.path.join(local_dir, 'demo_study', 'participant_info')
     users = []
-    with open(os.path.join(dir_part_info, 'participant_info.txt'), 'r') as in_file:
+    with open(dir_part_info + '.txt', 'r') as in_file:
         for line in in_file:
             if line[0] == '#':
                 continue
@@ -62,7 +61,7 @@ def end_of_study(request, user_id, previous_patient_id=0):
     """
     print(request.path_info)
     if user_id != 'interface_demo':
-        update_participant_info(user_id, local_dir + 'demo_study/participant_info/')
+        update_participant_info(user_id, os.path.join(local_dir, 'demo_study', 'participant_info'))
     return HttpResponse("<h2>You have completed all of the cases!"
                         "</h2><br><a href=http://127.0.0.1:8000/LEMRinterface/home/"+user_id+"/><button>Home</button></a>")
 
@@ -86,13 +85,13 @@ def save_input(request):
 
 
 @ensure_csrf_cookie
-def detail(request, patient_id, user_id, time_cutoff=1):
+def detail(request, patient_id, user_id='interface_demo', time_cutoff=1):
     time_cutoff = int(time_cutoff)
 
-    template = loader.get_template('LEMRinterface/index_3.html')
+    template = loader.get_template(os.path.join('LEMRinterface', 'index_3.html'))
     print("New request: " + request.path_info)
 
-    p_info_location = os.path.join(local_dir, 'demo_study/participant_info/')
+    p_info_location = os.path.join(local_dir, 'demo_study', 'participant_info')
     returned_data = determine_next_url(p_info_location, user_id, time_cutoff, patient_id)
     next_patient, next_view, show_highlights, highlights_only = returned_data  # from line above
 
@@ -114,14 +113,14 @@ def detail(request, patient_id, user_id, time_cutoff=1):
 
     record_report = 'true'
 
-    load_dir = os.path.join(local_dir, 'demo_study/cases_t', str(time_cutoff), '/', str(patient_id), '/')
+    load_dir = os.path.join(local_dir, 'demo_study', 'cases_t' + str(time_cutoff), str(patient_id))
 
     data_fields_to_highlight = []
     if show_highlights:
         # load med mappings. catalog_display is used as machine learning names, ordered as is the longer display name
-        catalog_display_dic, ordered_as_dic = load_med_maps(load_dir + 'med-display-id_to_name.txt')
+        catalog_display_dic, ordered_as_dic = load_med_maps(os.path.join(load_dir, 'med-display-id_to_name.txt'))
         # highlights = load_highlights(path)
-        with open(local_dir + 'demo_study/case_highlights.txt', 'r') as f:
+        with open(os.path.join(local_dir, 'demo_study', 'case_highlights.txt'), 'r') as f:
             for line in f:
                 s_line = line.rstrip().split(': ')
                 if s_line[0] == str(patient_id):
@@ -136,10 +135,10 @@ def detail(request, patient_id, user_id, time_cutoff=1):
     global_time = json.load(open(os.path.join(load_dir, 'global_time.txt'), 'r'))
     lab_info = json.load(open(os.path.join(load_dir, 'labs.txt'), 'r'))
     vital_info = json.load(open(os.path.join(load_dir, 'vitals.txt'), 'r'))
-    group_order_labs = json.load(open(os.path.join(local_dir, 'demo_study/tests/group_order_labs.txt'), 'r'))
-    group_info = json.load(open(os.path.join(local_dir, 'demo_study/tests/group_membership.txt'), 'r'))
-    global_params = json.load(open(os.path.join(local_dir, 'demo_study/tests/global_params.txt'), 'r'))
-    display_names = json.load(open(os.path.join(local_dir, 'demo_study/tests/display_names.txt'), 'r'))
+    group_order_labs = json.load(open(os.path.join(local_dir, 'demo_study', 'stored_data_structures', 'group_order_labs.txt'), 'r'))
+    group_info = json.load(open(os.path.join(local_dir, 'demo_study', 'stored_data_structures', 'group_membership.txt'), 'r'))
+    global_params = json.load(open(os.path.join(local_dir, 'demo_study', 'stored_data_structures', 'global_params.txt'), 'r'))
+    display_names = json.load(open(os.path.join(local_dir, 'demo_study', 'stored_data_structures', 'display_names.txt'), 'r'))
     recent_results = json.load(open(os.path.join(load_dir, 'recent_results.txt'), 'r'))
     med_info = json.load(open(os.path.join(load_dir, 'case_test_meds.txt'), 'r'))
     display_med_names = json.load(open(os.path.join(load_dir, 'display_med_names.txt'), 'r'))

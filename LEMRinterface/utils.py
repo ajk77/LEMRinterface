@@ -52,7 +52,7 @@ def load_med_maps(med_map_filename):
 
 
 def print_to_pixelmap_file(local_dir, is_new_patient, patient_id, str_map, timestamp):
-    out_file = open(local_dir+"pixelmaps/pat_"+str(patient_id)+'.txt', 'a+')
+    out_file = open(os.path.join(local_dir, "pixelmaps", "pat_"+str(patient_id)+".txt"), 'a+')
     if is_new_patient == 1:
         str_out = "#refresh\n"
         out_file.write(str_out)
@@ -73,7 +73,7 @@ def print_to_pixelmap_file(local_dir, is_new_patient, patient_id, str_map, times
 
 def print_to_manual_input_file(local_dir, patient_id, timestamp, selections, rating, reason):
     print('\t___printing to input file ' + str(patient_id))
-    out_file = open(local_dir + "manual_input/pat_" + str(patient_id) + '.txt', 'w+')
+    out_file = open(os.path.join(local_dir, "manual_input", "pat_" + str(patient_id) + '.txt'), 'w+')
     out_file.write('>>>' + str(float(timestamp) / 1000) + '\n')
     out_file.write(selections + '\n')
     out_file.write('### difficulty rating ###\n')
@@ -85,7 +85,7 @@ def print_to_manual_input_file(local_dir, patient_id, timestamp, selections, rat
 
 
 def print_to_notemap_file(local_dir, is_new_patient, patient_id, str_out):
-    out_file_note = open(local_dir + "notemaps/pat_" + str(patient_id) + '.txt', 'a')
+    out_file_note = open(os.path.join(local_dir, "notemaps", "pat_" + str(patient_id) + '.txt'), 'a')
     if is_new_patient == 1:     # new interaction
         out_file_note.write(str_out)
     elif is_new_patient == 2:   # end of interaction
@@ -97,7 +97,7 @@ def print_to_notemap_file(local_dir, is_new_patient, patient_id, str_out):
 
 def print_to_issue_report_file(local_dir, patient_id, timestamp, issue_text):
     print('\t---printing to issue report file ' + str(patient_id))
-    out_file = open(local_dir + "manual_input/issues_for_pat_" + str(patient_id) + '.txt', 'a+')
+    out_file = open(os.path.join(local_dir, "manual_input", "issues_for_pat_" + str(patient_id) + '.txt'), 'a+')
     out_file.write('>>>' + str(float(timestamp) / 1000) + '\n')
     out_file.write(issue_text + '\n')
     out_file.close()
@@ -106,7 +106,7 @@ def print_to_issue_report_file(local_dir, patient_id, timestamp, issue_text):
 
 def find_first_case(location, user_id):
     next_patient_id = 0
-    in_file = open(location + 'participant_info.txt', 'r')
+    in_file = open(os.path.join(location, 'participant_info.txt'), 'r')
     lines = in_file.readlines()
     in_file.close()
     num_cases = 0
@@ -134,7 +134,7 @@ def find_first_case(location, user_id):
 
 def update_participant_info(user_id, location):
     import datetime
-    in_file = open(location + 'participant_info.txt', 'r+')
+    in_file = open(os.path.join(location, 'participant_info.txt'), 'r+')
     out_lines = []
     for line in in_file:
         line_split = line.split(',')
@@ -167,8 +167,9 @@ def get_next_case(user_file, case_count):
     print('*** Matching ID was not found')
     return 'error'
 
+
 def determine_next_url(location, user_id, time_cutoff, curr_patient_id):
-    in_file = open(location + user_id + '.txt', 'r')
+    in_file = open(os.path.join(location, user_id + '.txt'), 'r')
     lines = in_file.readlines()
     in_file.close()
     for i in range(len(lines)):
@@ -263,34 +264,34 @@ def reset_directories(local_dir, user_id=False):
     save_time = str(time.time())
     # create study dir
     if user_id:
-        interaction_dir = local_dir + 'evaluation_study/eye_tracking/' + str(user_id) + '/run-' + save_time
+        interaction_dir = os.path.join(local_dir, 'evaluation_study', 'eye_tracking', str(user_id), 'run-' + save_time)
     else:
-        interaction_dir = local_dir + 'run-' + save_time
+        interaction_dir = os.path.join(local_dir, 'run-' + save_time)
 
     if not os.path.exists(interaction_dir):
         os.makedirs(interaction_dir)
     # move dirs recreate moved dirs
-    shutil.move(local_dir + 'interaction_stream', interaction_dir)
-    if not os.path.exists(local_dir + 'interaction_stream'):
-        os.makedirs(local_dir + 'interaction_stream')
-    shutil.move(local_dir + 'pixelmaps', interaction_dir)
-    if not os.path.exists(local_dir + 'pixelmaps'):
-        os.makedirs(local_dir + 'pixelmaps')
-    shutil.move(local_dir + 'eye_stream', interaction_dir)
-    if not os.path.exists(local_dir + 'eye_stream'):
-        os.makedirs(local_dir + 'eye_stream')
-    shutil.move(local_dir + 'manual_input', interaction_dir)
-    if not os.path.exists(local_dir + 'manual_input'):
-        os.makedirs(local_dir + 'manual_input')
-    shutil.move(local_dir + 'notemaps', interaction_dir)
-    if not os.path.exists(local_dir + 'notemaps'):
-        os.makedirs(local_dir + 'notemaps')
-    shutil.move(local_dir + 'audio_recordings', interaction_dir)
-    if not os.path.exists(local_dir + 'audio_recordings'):
-        os.makedirs(local_dir + 'audio_recordings')
+    shutil.move(os.path.join(local_dir, 'interaction_stream'), interaction_dir)
+    if not os.path.exists(os.path.join(local_dir, 'interaction_stream')):
+        os.makedirs(os.path.join(local_dir, 'interaction_stream'))
+    shutil.move(os.path.join(local_dir, 'pixelmaps'), interaction_dir)
+    if not os.path.exists(os.path.join(local_dir,'pixelmaps')):
+        os.makedirs(os.path.join(local_dir, 'pixelmaps'))
+    shutil.move(os.path.join(local_dir, 'eye_stream'), interaction_dir)
+    if not os.path.exists(os.path.join(local_dir, 'eye_stream')):
+        os.makedirs(os.path.join(local_dir, 'eye_stream'))
+    shutil.move(os.path.join(local_dir, 'manual_input'), interaction_dir)
+    if not os.path.exists(os.path.join(local_dir, 'manual_input')):
+        os.makedirs(os.path.join(local_dir, 'manual_input'))
+    shutil.move(os.path.join(local_dir, 'notemaps'), interaction_dir)
+    if not os.path.exists(os.path.join(local_dir, 'notemaps')):
+        os.makedirs(os.path.join(local_dir, 'notemaps'))
+    shutil.move(os.path.join(local_dir, 'audio_recordings'), interaction_dir)
+    if not os.path.exists(os.path.join(local_dir, 'audio_recordings')):
+        os.makedirs(os.path.join(local_dir, 'audio_recordings'))
 
     # map the pixelmap files
-    if os.path.isfile(interaction_dir + '/pixelmaps/pat_calibration.txt'):
+    if os.path.isfile(os.path.join(interaction_dir, 'pixelmaps', 'pat_calibration.txt')):
         return interaction_dir
     else:
         return False

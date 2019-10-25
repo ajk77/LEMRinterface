@@ -55,7 +55,7 @@ def full_gender(gender_char):
 
 @register.filter(name='get_meds')
 def get_meds(route_mapping, route):
-    return route_mapping[route]
+    return [str(x) for x in route_mapping[route]]
 
 @ register.filter(name='date_line')
 def date_line(global_time):

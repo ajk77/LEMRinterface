@@ -1,5 +1,6 @@
 # Don't track content of these folders
 venv/*
+SYM_LIST.txt
 
 # Packages #
 .gitconfig

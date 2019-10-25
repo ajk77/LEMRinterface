@@ -216,6 +216,7 @@
                       </div>
 
                     {% for med in routes_mapping|get_meds:route %}
+
                         {% if med in med_info %}
                         <div class="medrow" id="{{ med }}" onclick="activate('{{ med }}')">
                            <div class="chartcol1 shower" ></div>
@@ -360,14 +361,14 @@
             <div id="task" class="note task"><br>
                 Please use the available information to become familiar with this patient.
                 <hr>Then click
-                <input id='next_screen_button' type="button" value="continue to next day" onclick="show_loading();link_press('/LEMRinterface/{{ demographics_dict.id }}/{{ user_id }}/2/{{ demographics_dict.id }}')"></input>
+                <input id='next_screen_button' type="button" value="continue to next day" onclick="show_loading();link_press('/LEMRinterface/{{ demographics_dict.id }}/{{ user_id }}/2')"></input>
             </div>
         {% else %}
             <div class="col-lg-12 taskbox scroll-box t-border">
             <div id="task" class="note task"><br>
                 24 hours have passed. Please become up to date with this patient’s problems and latest data.
                 <hr>Then click
-                <input id='next_screen_button' type="button" value="continue" onclick="create_rounding_report_screen('/LEMRinterface/{{ next_patient }}/{{ user_id }}/1/{{ demographics_dict.id }}')"></input>
+                <input id='next_screen_button' type="button" value="continue" onclick="create_rounding_report_screen('/LEMRinterface/{{ next_patient }}/{{ user_id }}/1')"></input>
             </div>
         {% endif %}
 

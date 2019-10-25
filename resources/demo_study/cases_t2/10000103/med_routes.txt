@@ -1,1 +1,1 @@
-"[\"By Mouth\", \"SwishandSpit\", \"subQ\", \"IV\", \"Per Rectum\", \"IVPB\", \"IV Push\"]"
+["By Mouth", "SwishandSpit", "subQ", "IV", "Per Rectum", "IVPB", "IV Push"]
