@@ -28,6 +28,7 @@ along with LEMRinterface.  If not, see <https://www.gnu.org/licenses/>.
 
 from django.db import models
 
+
 class a_ClinicalEvents(models.Model):
     patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
     date = models.DateTimeField(null=True, db_column='EventDate', blank=True)
@@ -37,6 +38,7 @@ class a_ClinicalEvents(models.Model):
     rollvaltext = models.CharField(max_length=50, db_column='RollupValText', blank=True)
     class Meta:
         db_table = u'a_ClinicalEvents'
+
 
 class a_demographics(models.Model):
     patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
@@ -48,6 +50,7 @@ class a_demographics(models.Model):
     race = models.CharField(max_length=35, db_column='RaceComposite', blank=True)
     class Meta:
         db_table = u'a_demographics'
+
 
 class a_HomeMeds(models.Model):
     patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
@@ -62,6 +65,7 @@ class a_HomeMeds(models.Model):
     class Meta:
         db_table = u'a_HomeMeds'
 
+
 class a_ICDCPT(models.Model):
     patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
     date = models.DateTimeField(null=True, db_column='EventDate', blank=True)
@@ -69,6 +73,7 @@ class a_ICDCPT(models.Model):
     text = models.CharField(max_length=125, db_column='Disp', blank=True)
     class Meta:
         db_table = u'a_ICDCPT'
+
 
 class a_ICUpatients(models.Model):
     patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
@@ -80,6 +85,7 @@ class a_ICUpatients(models.Model):
     class Meta:
         db_table = u'a_ICUpatients'
 
+
 class a_IO(models.Model):
     patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
     type = models.CharField(max_length=10, db_column='IOType', blank=True)
@@ -90,6 +96,7 @@ class a_IO(models.Model):
     category = models.IntegerField(db_column='Category', blank=True)
     class Meta:
         db_table = u'a_IO'
+
 
 class a_Medication(models.Model):
     patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
@@ -107,6 +114,7 @@ class a_Medication(models.Model):
     class Meta:
         db_table = u'a_Medication'
 
+
 class a_Micro(models.Model):
     patientvisitid = models.IntegerField(null=False, db_column='PatientVisitID')
     date = models.DateTimeField(null=True, db_column='EventDate', blank=True)
@@ -119,6 +127,7 @@ class a_Micro(models.Model):
         db_table = u'a_Micro'
         ordering = ['-date']  # so query is ordered by date, not upk
 
+
 class a_MicroReport(models.Model):
     patientvisitid = models.IntegerField(null=False, db_column='PatientVisitID')
     eventid = models.IntegerField(null=False, db_column='EventID')
@@ -127,6 +136,7 @@ class a_MicroReport(models.Model):
     class Meta:
         unique_together = (("patientvisitid", "eventid"),)
         db_table = u'a_MicroReport'
+
 
 class a_Surgical(models.Model):
     patientvisitid = models.IntegerField(null=False, db_column='PatientVisitID')
@@ -139,6 +149,7 @@ class a_Surgical(models.Model):
         unique_together = (("patientvisitid", "date"),)
         db_table = u'a_Surgical'
 
+
 class a_Ventilator(models.Model):
     patientvisitid = models.IntegerField(null=False, db_column='PatientVisitID')
     date = models.IntegerField(null=False, db_column='EventDate')
@@ -147,6 +158,7 @@ class a_Ventilator(models.Model):
     class Meta:
         unique_together = (("patientvisitid", "date"),)
         db_table = u'a_Ventilator'
+
 
 class a_groupmember(models.Model):
     object = models.CharField(max_length=600, blank=True)
@@ -167,6 +179,7 @@ class a_groupmember(models.Model):
     class Meta:
         db_table = u'a_groupmember'
 
+
 class lab_739(models.Model):
     patientvisitid = models.IntegerField(db_column='PatientVisitID')
     eventdate = models.DateTimeField(db_column='EventDate')
@@ -182,11 +195,13 @@ class lab_739(models.Model):
     class Meta:
         db_table = u'lab_739'
 
+
 class marstorootcodes(models.Model):
     marscode = models.CharField(primary_key=True,max_length=6, db_column='marsCode')
     rootcode = models.CharField(max_length=6, db_column='rootCode')
     class Meta:
         db_table = u'marstorootcodes'
+
 
 class rootgroupmember(models.Model):
     root = models.CharField(primary_key=True,max_length=6, db_column='root')
@@ -200,6 +215,7 @@ class rootgroupmember(models.Model):
     class Meta:
         db_table = u'rootgroupmember'
         ordering = ['orderingroup']  # so query is ordered by date, not upk
+
 
 class displayparams(models.Model):
     root = models.CharField(primary_key=True,max_length=6, db_column='root')

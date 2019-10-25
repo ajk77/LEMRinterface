@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let navHeight = $('.navbar').outerHeight(true) + 10;
+    var navHeight = $('.navbar').outerHeight(true) + 10;
     $(document.body).scrollspy({
         target: '.bs-sidebar',
         offset: navHeight
@@ -16,6 +16,7 @@ $(document).ready(function () {
 
     $("#progress-notes").addClass('active');
 
+
     // bottom labs scroll event
     $(".labbox").bind("scroll", function() {
         send_div_locations();
@@ -26,7 +27,6 @@ $(document).ready(function () {
     $(".medbox").bind("scroll", function() {
         send_div_locations();
     });
-
     
     // notes scroll
     $(".report").bind("scroll", function() {
@@ -53,7 +53,7 @@ $(document).ready(function () {
 // send timestamp when leaving or refreshing a patient page
 window.onbeforeunload = function () {
     if(in_study){
-        let curr_timestamp = Date.now();
+        var curr_timestamp = Date.now();
         create_post(patient_id.toString(), curr_timestamp.toString(), '0', '0')
     }
 };
@@ -69,13 +69,13 @@ $(document).mousedown(function() {
 
 function send_div_locations(){
     // Save pixelmap as long as within study or in test (99) mode
-    if(in_study){
+    if(in_study && dynamic_interface_storage && false){ // turned off storing of screen layout. This functionality is for automated eye tracking analysis
         // variables
-        let lab_window, vit_window, io_window, med_window;
-        let curr_pixelmap = [];
-        let curr_groups = [];
+        var lab_window, vit_window, io_window, med_window;
+        var curr_pixelmap = [];
+        var curr_groups = [];
         // timestamp
-        let curr_timestamp = Date.now();
+        var curr_timestamp = Date.now();
         if (!(screen.width === window.innerWidth && (screen.height === window.innerHeight))){
             sendAlert("Please press F11 to go to full screen!");
             //send_div_locations();
@@ -103,10 +103,10 @@ function send_div_locations(){
                 });
                 // Lab positions
                 $(".chartrow").each(function () {
-                    let edges = this.getBoundingClientRect();
-                    let t = edges.top;
-                    let b = edges.bottom;
-                    let curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
+                    var edges = this.getBoundingClientRect();
+                    var t = edges.top;
+                    var b = edges.bottom;
+                    var curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
                         Math.round(edges.right)];
                     if (curr_array[1] < lab_window.bottom && curr_array[3] > lab_window.top) {
                         // object top is < (above) window bottom and object bottom is > (below) window top
@@ -115,10 +115,10 @@ function send_div_locations(){
                 });
                 // vital positions
                 $(".vitalrow").each(function () {
-                    let edges = this.getBoundingClientRect();
-                    let t = edges.top;
-                    let b = edges.bottom;
-                    let curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
+                    var edges = this.getBoundingClientRect();
+                    var t = edges.top;
+                    var b = edges.bottom;
+                    var curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
                         Math.round(edges.right)];
                     if (curr_array[1] < vit_window.bottom && curr_array[3] > vit_window.top) {
                         // div top (1) is < (pixel count) view bottom (3) and div bottom (3) is > view top (1)
@@ -127,10 +127,10 @@ function send_div_locations(){
                 });
                 // IO positions
                 $(".iorow").each(function () {
-                    let edges = this.getBoundingClientRect();
-                    let t = edges.top;
-                    let b = edges.bottom;
-                    let curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
+                    var edges = this.getBoundingClientRect();
+                    var t = edges.top;
+                    var b = edges.bottom;
+                    var curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
                         Math.round(edges.right)];
                     if (curr_array[1] < io_window.bottom && curr_array[3] > io_window.top) {
                         // div top (1) is < (pixel count) view bottom (3) and div bottom (3) is > view top (1)
@@ -139,10 +139,10 @@ function send_div_locations(){
                 });
                 // Med positions
                 $(".medrow").each(function () {
-                    let edges = this.getBoundingClientRect();
-                    let t = edges.top;
-                    let b = edges.bottom;
-                    let curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
+                    var edges = this.getBoundingClientRect();
+                    var t = edges.top;
+                    var b = edges.bottom;
+                    var curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
                         Math.round(edges.right)];
                     if (curr_array[1] < med_window.bottom && curr_array[3] > med_window.top) {
                         // div top (1) is < (pixel count) view bottom (3) and div bottom (3) is > view top (1)
@@ -151,10 +151,10 @@ function send_div_locations(){
                 });
                 // Lab group positions
                 $(".lab-group").each(function () {
-                    let edges = this.getBoundingClientRect();
-                    let t = edges.top;
-                    let b = edges.bottom;
-                    let curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
+                    var edges = this.getBoundingClientRect();
+                    var t = edges.top;
+                    var b = edges.bottom;
+                    var curr_array = [this.id.replace(',', ''), Math.round(t), Math.round(edges.left), Math.round(b),
                         Math.round(edges.right)];
                     curr_groups.push(curr_array)
                 });
@@ -168,19 +168,19 @@ function send_div_locations(){
 
 // this function send the note name and window position on each note navigated to, as well as the note scroll position on each scroll
 function note_tracking(){
-    let curr_timestamp = Date.now();
-    if(in_study){
-        let curr_array = false;
-        let active_note_type = 'none';
+    var curr_timestamp = Date.now();
+    if(in_study && dynamic_interface_storage && false){
+        var curr_array = false;
+        var active_note_type = 'none';
         // Find active tab
         $('.nav-track.active').each(function () {
             active_note_type = this.id;
         });
         // Find active note location
         $('.active.report.tab-pane').each(function () {
-            let edges = this.getBoundingClientRect();
-            let t = edges.top;
-            let b = edges.bottom;
+            var edges = this.getBoundingClientRect();
+            var t = edges.top;
+            var b = edges.bottom;
             if (edges.top > 0) {
                 curr_array = [this.id, Math.round(t), Math.round(edges.left), Math.round(b),
                               Math.round(edges.right)];
@@ -200,9 +200,9 @@ function note_tracking(){
 // this function send the note scroll position on each scroll
 function note_scroll(curr_id){
     if(in_study){
-        let scroll_top = $('#'+curr_id).scrollTop();
+        var scroll_top = $('#'+curr_id).scrollTop();
         if (scroll_top === null){scroll_top = 0}
-        let curr_pixelmap = Date.now().toString() + ',' + scroll_top;
+        var curr_pixelmap = Date.now().toString() + ',' + scroll_top;
         create_post(patient_id.toString(), '', curr_pixelmap, '');
     }
 }
@@ -211,8 +211,8 @@ function note_scroll(curr_id){
 function create_manual_input_post(new_link) {
     if(in_study){
         console.log("-saving manual input-"); // sanity check
-        let csrf_token = getCookie('csrftoken');
-        let return_selected_items = '';
+        var csrf_token = getCookie('csrftoken');
+        var return_selected_items = '';
         if (study_arm === 'C'){
             return_selected_items = selected_items.toString()
         }
@@ -238,29 +238,30 @@ function create_manual_input_post(new_link) {
 
 // Creates post to save pixelmaps
 function create_post(id, curr_timestamp, curr_pixelmap, curr_groups) {
-    let csrf_token = getCookie('csrftoken');
-    $.ajax({
-        url : "http://127.0.0.1:8000/LEMRinterface/save_pixelmap/", // the endpoint
-        type : "POST", // http method
-        data : { csrfmiddlewaretoken: csrf_token, the_pixelmap : curr_pixelmap, the_timestamp : curr_timestamp, pat_id : id, the_groups : curr_groups  }, // data sent with the post request
-        // handle a successful response
-        success : function(msg) {
-            console.log(msg); // another sanity check
-        },
-        // handle a non-successful response
-        error : function(xhr,errmsg,err) {
-           console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
-        }
-    });
+    if (dynamic_interface_storage  && false){
+        var csrf_token = getCookie('csrftoken');
+        $.ajax({
+            url : "http://127.0.0.1:8000/LEMRinterface/save_pixelmap/", // the endpoint
+            type : "POST", // http method
+            data : { csrfmiddlewaretoken: csrf_token, the_pixelmap : curr_pixelmap, the_timestamp : curr_timestamp, pat_id : id, the_groups : curr_groups  }, // data sent with the post request
+            // handle a successful response
+            success : function(msg) {
+                console.log(msg); // another sanity check
+            },
+            // handle a non-successful response
+            error : function(xhr,errmsg,err) {
+               console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+            }
+        })}
     return false;
 }
 
 // Gets cookie from webpage
 function getCookie(cname) {
-    let name = cname + "=";
-    let ca = document.cookie.split(';');
-    for(let i=0; i<ca.length; i++) {
-        let c = ca[i];
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
         while (c.charAt(0) === ' ') c = c.substring(1);
         if (c.indexOf(name) === 0) return c.substring(name.length,c.length);
     }
@@ -282,32 +283,33 @@ function get2D( num ) {
 }
 
 // Global Variables
-let only_show_highlights = false; // Set true when non highlighted data fields should be hidden
-let chartsContainers = []; // Holds all of the promoted charts
-let selected_items = []; // The names of the labs that are in the promoted region
-let chartrowids = []; // The ids of all the chart rows
-let selectedMin; // The min time taken from the time chart range selector
-let selectedMax; // The max time taken from the time chart range selector
-let data_max; // the max time loaded to interface
-let down = false; // True is the mouse is currently clicked.
-let patient_id = 0; // holds current patient id
-let short_patient_id = 0; // holds a string of the last three digits of the patient id
-let user_id = '';  // holds the current user id
-let in_study = false; // false if first_four (interface demo), true otherwise
-let selection_screen = false; // true when on seelection screen
-let case_difficulty = false;
-let paused_study = true;
-let first_view = true;
-let recording = false;
-let issue_box = false;
-let clinical_impact = 0;
-let next_patient_link = '';
-let study_arm = '';
+var only_show_highlights = false; // Set true when non highlighted data fields should be hidden
+var chartsContainers = []; // Holds all of the promoted charts
+var selected_items = []; // The names of the labs that are in the promoted region
+var chartrowids = []; // The ids of all the chart rows
+var selectedMin; // The min time taken from the time chart range selector
+var selectedMax; // The max time taken from the time chart range selector
+var data_max; // the max time loaded to interface
+var down = false; // True is the mouse is currently clicked.
+var patient_id = 0; // holds current patient id
+var short_patient_id = 0; // holds a string of the last three digits of the patient id
+var user_id = '';  // holds the current user id
+var in_study = false; // false if first_four (interface demo), true otherwise
+var selection_screen = false; // true when on seelection screen
+var case_difficulty = false;
+var paused_study = true;
+var first_view = true;
+var recording = false;
+var issue_box = false;
+var clinical_impact = 0;
+var next_patient_link = '';
+var study_arm = '';
+var dynamic_interface_storage = false;  // set true if using eye tracking
 
 // sets global patient_id
 function set_ids(curr_id, curr_user_id){
     patient_id = curr_id;
-    let str_id = String(patient_id);
+    var str_id = String(patient_id);
     short_patient_id = str_id.slice(-3);
     user_id = curr_user_id;
     if (curr_user_id !== 'first_four'){
@@ -349,7 +351,7 @@ function remove_directions(){
     $('#directions').hide();
     $('#loading_new_patient').hide();
     paused_study = false;
-    send_div_locations();
+    // send_div_locations();  This function is for storing screen layout
     note_tracking();
 }
 
@@ -362,8 +364,8 @@ function take_a_break(user_id){
 }
 
 function get_formatted_date(ms_date){
-    let js_date = new Date(ms_date);
-    let display_date = 0;
+    var js_date = new Date(ms_date);
+    var display_date = 0;
     if (js_date.getHours() < 20) {
         display_date = ' ' + get2D(js_date.getMonth() + 1) + '/' + get2D(js_date.getDate()) + ' ' + get2D(js_date.getHours() + 4) + ':' + get2D(js_date.getMinutes());
     }else{
@@ -393,10 +395,10 @@ function updateExtremes(){
         $("#lab-time16").highcharts().xAxis[0].setExtremes(selectedMin, selectedMax);
     }catch(err){}
     // search for charts that do not have points within defined axes.
-    for (let i = 0; i < chartsContainers.length; i++) {
-        let notPoints = true;
-        let currData = [];
-        for (let q=0; q < chartsContainers[i].xAxis[0].series.length; q++) {
+    for (var i = 0; i < chartsContainers.length; i++) {
+        var notPoints = true;
+        var currData = [];
+        for (var q=0; q < chartsContainers[i].xAxis[0].series.length; q++) {
             currData = currData.concat(chartsContainers[i].xAxis[0].series[q].xData);
         }
         for(q=0;q<currData.length;q++){ // Lookes for data point with currently selected time range
@@ -415,7 +417,7 @@ function updateExtremes(){
             chartsContainers[i].reflow();
         }
     }
-    send_div_locations();
+    // send_div_locations();  This function is for storing screen layout
 }
 
 // Shows group when it contains items (prevents empty groups from being displayed, called during page loading)
@@ -426,7 +428,7 @@ function showgroup(id) {
 
 //highlight labs
 function highlight(id){
-    let curr = "div[id='"+id+"']";
+    var curr = "div[id='"+id+"']";
     $(curr).css("background-color","#FFC300");//.css("border-style", "solid").css("border-width", "thin");
     selected_items.push(id);
     if (case_difficulty){
@@ -438,14 +440,14 @@ function highlight(id){
 
 //highlight labs
 function un_highlight(id){
-    let curr = "div[id='"+id+"']";
+    var curr = "div[id='"+id+"']";
     $(curr).css("background-color","#eeeeee");
     selected_items.splice(selected_items.indexOf(id), 1);
 }
 
 //hid data field
 function hid(id){
-    let curr = "div[id='"+id+"']";
+    var curr = "div[id='"+id+"']";
     $(curr).css("background-color","#FFC300");//.css("border-style", "solid").css("border-width", "thin");
     selected_items.push(id);
 }
@@ -464,10 +466,10 @@ function add_vertical_point(point_time, from_note){
     if (typeof from_note !== 'undefined'){
         setColor(this.previousSibling.previousElementSibling);
         // floor to start of day
-        let coeff = 1000 * 60 * 60 * 24;
-        let round_time = point_time - (point_time%coeff) + 3600000;
-        let band_start = new Date(round_time);
-        let band_end = band_start.getTime() + coeff;
+        var coeff = 1000 * 60 * 60 * 24;
+        var round_time = point_time - (point_time%coeff) + 3600000;
+        var band_start = new Date(round_time);
+        var band_end = band_start.getTime() + coeff;
         for (i = 0; i < chartsContainers.length; i++) {
             chartsContainers[i].xAxis[0].addPlotBand({
                 from: band_start,
@@ -486,12 +488,12 @@ function add_vertical_point(point_time, from_note){
             // select time selector and update
             $("#time_selector").highcharts().xAxis[0].setExtremes(selectedMin, selectedMax);
         }
-        let st_display = ' ' + get2D(band_start.getMonth() + 1) + '/' + get2D(band_start.getDate() + 1);
+        var st_display = ' ' + get2D(band_start.getMonth() + 1) + '/' + get2D(band_start.getDate() + 1);
         $("#selectedTime").text(st_display);
         $("#selectedP").css('background', 'white');
     }else{
         remove_vertical_point(true);
-        for (let i = 0; i < chartsContainers.length; i++) {
+        for (var i = 0; i < chartsContainers.length; i++) {
             chartsContainers[i].xAxis[0].addPlotLine({
                 value: point_time,
                 color: 'black',
@@ -517,7 +519,7 @@ function add_vertical_point(point_time, from_note){
 
 //  Add vertical plot line to each graph
 function remove_vertical_point(display_recent_24){
-    for (let i = 0; i < chartsContainers.length; i++) {
+    for (var i = 0; i < chartsContainers.length; i++) {
         chartsContainers[i].xAxis[0].removePlotLine('plot-line-1');
         if (display_recent_24){
             chartsContainers[i].xAxis[0].addPlotBand({
@@ -553,7 +555,7 @@ function activate_continue_button(selection, is_case_difficulty){
 function create_rounding_report_screen(next_link) {
     selection_screen = true;
     next_patient_link = next_link;
-    let task_text =
+    var task_text =
         "<p>Now that you are up to date with this patient’s problems and latest data, could you please present the "
         + "patient as if you were presenting during morning rounds, including pertinent positives and negatives, as "
         + "well as your assessment and management plan for the day. Try to make it concise.</p>"
@@ -568,7 +570,7 @@ function create_rounding_report_screen(next_link) {
 
 // Creates complexity rating screen
 function create_rate_complexity_screen(){
-    let task_text =
+    var task_text =
         "Rate the level of effort you exerted when becoming up to date with this patient’s problems and latest data:<br> "
         + '<form><input type="radio" name="diff" value="1" onclick="activate_continue_button(1, true);">  1. low<br>'
         + '<input type="radio" name="diff" value="2" onclick="activate_continue_button(2, true);">  2. below-average<br>'
@@ -596,7 +598,7 @@ function create_rate_complexity_screen(){
 
 // Creates selection screen
 function create_selection_screen(){
-    let task_text =
+    var task_text =
             "Select the pertinent information that you used when becoming up to date with this patient’s problems and latest data.\n"
             + "<hr>Then click <input id='rounding_report_continue' type='button' value='next case' "
             + "onclick='next_case_link_press()'>";
@@ -615,7 +617,7 @@ function show_additional_information(){
     // this function will call create selection screen
     only_show_highlights = false;
     selection_screen = false;
-    let task_text =
+    var task_text =
         "<p>Additional information in now being displayed.</p>"
         + "<p>Considering the additional information, if you would like to revise your presentation, please do so now."
         + "</p><p>Start the recording with "
@@ -631,7 +633,7 @@ function show_additional_information(){
 function create_rate_clinical_impact_screen(){
     // next is next_link press
     selection_screen = true;
-    let task_text =
+    var task_text =
         "If you revised your presentation, rate the clinical impact those revisions would have on patient care:"
         + '<form>'
         + '<input type="radio" name="impact" value="1" onclick="activate_continue_button(1, false);">&nbsp;1. no impact<br>'
@@ -656,9 +658,9 @@ function link_press(curr_url){
 
 // used when selection is made
 function activate(id){
-    let curr = 'div[id="' + id + '"]';
-    let child_2 = $(curr).find('.chartcol1');
-    let child_2_html = child_2.html();
+    var curr = 'div[id="' + id + '"]';
+    var child_2 = $(curr).find('.chartcol1');
+    var child_2_html = child_2.html();
     if (child_2_html.length > 1) {
         if (child_2_html.split('-')[1][0] === 'u') {
             child_2.html("<span class='glyphicon glyphicon-check' aria-hidden='true'></span>");
@@ -674,7 +676,7 @@ function activate(id){
 function get_chart(chartTitle, type, predata, displayText){
     //console.log(displayText);
     predata = predata.replace(/'/g, '"');
-    let post_data = $.parseJSON(predata);
+    var post_data = $.parseJSON(predata);
 
     // [high, norm, low], curr_data['text'], abs_ranges, norm_ranges, curr_recent_result, curr_recent_units
     if (chartTitle === 'VTDIAA'){
@@ -689,17 +691,17 @@ function get_chart(chartTitle, type, predata, displayText){
 
 // lower labs
 function get_lab_chart(chartTitle, post_data, displayText) {
-    let container = 'lab' + chartTitle;
-    let show_y_axis_labels = true;
-    let left_spacing = 10;
-    let title_x_spacing = 0;
+    var container = 'lab' + chartTitle;
+    var show_y_axis_labels = true;
+    var left_spacing = 10;
+    var title_x_spacing = 0;
 
     if (post_data[0][0].data.length === 0 || post_data[0][0].name === 'discrete_values'){
         show_y_axis_labels = false;
         left_spacing = 34;
         title_x_spacing = -24
     }
-    let currChart = new Highcharts.Chart({
+    var currChart = new Highcharts.Chart({
         chart: {
             renderTo: container,
             height: 80,
@@ -768,7 +770,7 @@ function get_lab_chart(chartTitle, post_data, displayText) {
             },
             formatter: function () {
                 if(this.series.name === 'numeric_values') {
-                    let text = post_data[1][this.series.data.indexOf( this.point )];
+                    var text = post_data[1][this.series.data.indexOf( this.point )];
                     if (text !== null && text !== undefined){
                         return text;
                     }else{
@@ -789,10 +791,10 @@ function get_lab_chart(chartTitle, post_data, displayText) {
 
 function get_med_chart(chartTitle, predata, displayName) {
     predata = predata.replace(/'/g, '"');
-    let post_data = $.parseJSON(predata);
-    let container = 'med'+chartTitle;
-    let currChart;
-    let chart_height = 60 + 15*Math.floor(displayName.length/30);
+    var post_data = $.parseJSON(predata);
+    var container = 'med'+chartTitle;
+    var currChart;
+    var chart_height = 60 + 15*Math.floor(displayName.length/30);
     // Create chart
     currChart = new Highcharts.Chart({
         chart: {
@@ -869,8 +871,8 @@ function get_med_chart(chartTitle, predata, displayName) {
 
 
 function get_bp_chart(chartTitle, post_data, displayText) {
-    let container = 'lab'+chartTitle;
-    let currChart;
+    var container = 'lab'+chartTitle;
+    var currChart;
 
     currChart = new Highcharts.Chart({
         chart: {
@@ -930,7 +932,7 @@ function get_bp_chart(chartTitle, post_data, displayText) {
     tooltip: {
             shared: false,
             formatter: function () { // I need to show all the data in the tooltip, as well as the selected dot value to tell which one is selected
-                let series = this.point.series.chart.series,
+                var series = this.point.series.chart.series,
                     index = this.point.series.xData.indexOf(this.point.x),
                     sys = '',
                     dia = '';
@@ -959,10 +961,10 @@ function get_bp_chart(chartTitle, post_data, displayText) {
 
 function get_io_chart(chartTitle, predata, displayText) {
     predata = predata.replace(/'/g, '"');
-    let post_data = $.parseJSON(predata);
+    var post_data = $.parseJSON(predata);
 
-    let container = 'lab'+chartTitle;
-    let currChart;
+    var container = 'lab'+chartTitle;
+    var currChart;
 
     currChart = new Highcharts.Chart({
         chart: {
@@ -1035,7 +1037,7 @@ function getchartT(id,global_time) {
                 spacingTop:2,
                 spacingRight:6,
                 events: {load: function () {
-                    let range = this.xAxis[0].getExtremes();
+                    var range = this.xAxis[0].getExtremes();
                     this.xAxis[0].setExtremes(Math.max(range.min, range.max-216000000), range.max);}} // On load update selected range // 2.5 days
             },
             scrollbar: {enabled: false},
@@ -1076,7 +1078,7 @@ function getchartTS(id,global_time) {
                 spacingTop:2,
                 spacingRight:5,
                 events: {load: function () {
-                    let range = this.xAxis[0].getExtremes();
+                    var range = this.xAxis[0].getExtremes();
                     this.xAxis[0].setExtremes(Math.max(range.min, range.max-216000000), range.max);
                 }} // On load update selected range // 2.5 days
                 },

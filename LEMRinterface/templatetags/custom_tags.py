@@ -1,27 +1,33 @@
 from django import template
-import cgi
+import html
 
 register = template.Library()
+
 
 @register.filter(name='get_json_arr')
 def get_json_arr(lab_info, lab):
     return lab_info[lab]
 
+
 @register.filter(name='get_fixed_name')
 def get_fixed_name(lab_names, lab):
-    return cgi.escape(lab_names[lab][0].rstrip())
+    return html.escape(lab_names[lab][0].rstrip())
+
 
 @register.filter(name='get_fixed_name2')
 def get_fixed_name2(lab_names, lab):
     return lab_names[lab][0] + ' - ' +lab_names[lab][1]
 
+
 @register.filter(name='get_labnames')
 def get_group_members(group_info, group_name):
      return group_info[group_name]
 
+
 @register.filter(name='shorten_name')
 def shorten_name(group_name):
     return group_name.replace('istry', '')
+
 
 @register.filter(name="get_recent_value")
 def get_recent_value(recent, lab):
@@ -30,6 +36,7 @@ def get_recent_value(recent, lab):
     else:
         return "Never"
 
+
 @register.filter(name="next_lab")
 def next_lab(value, arg):
     try:
@@ -37,12 +44,14 @@ def next_lab(value, arg):
     except:
         return None
 
+
 @register.filter(name="date_only")
 def date_only(full_date):
     try:
         return full_date[0:10]
     except:
         return full_date
+
 
 @register.filter(name="full_gender")
 def full_gender(gender_char):
@@ -53,9 +62,11 @@ def full_gender(gender_char):
     else:
         return ''
 
+
 @register.filter(name='get_meds')
 def get_meds(route_mapping, route):
     return [str(x) for x in route_mapping[route]]
+
 
 @ register.filter(name='date_line')
 def date_line(global_time):

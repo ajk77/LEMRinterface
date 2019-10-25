@@ -134,7 +134,7 @@ def find_first_case(location, user_id):
 
 def update_participant_info(user_id, location):
     import datetime
-    in_file = open(os.path.join(location, 'participant_info.txt'), 'r+')
+    in_file = open(location + '.txt', 'r+')
     out_lines = []
     for line in in_file:
         line_split = line.split(',')
@@ -144,7 +144,7 @@ def update_participant_info(user_id, location):
         else:
             out_lines.append(line)
     in_file.close()
-    with open(location + 'participant_info.txt', 'w') as out_file:
+    with open(location + '.txt', 'w') as out_file:
         out_file.write(''.join(out_lines))
 
     return

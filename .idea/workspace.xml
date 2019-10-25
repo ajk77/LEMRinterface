@@ -2,134 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64ca1dd6-3523-4e31-8bb8-40700e8464f3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ajk77.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/demo_study/participant_infoparticipant_info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGE_LIST.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/index_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/index_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LEMRinterface/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LEMRinterface/static/js/emr_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/js/emr_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/eye_test_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/eye_test_template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LEMRinterface/templatetags/custom_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templatetags/custom_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LEMRinterface/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LEMRinterface/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LEMRinterface/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/ECHO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/ECHO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/EKG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/EKG.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/ER.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/ER.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/HP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/HP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/OP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/OP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/PGN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/PGN.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/RAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/RAD.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/case_test_meds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/case_test_meds.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/demographics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/demographics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/display_med_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/display_med_names.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/global_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/global_time.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/labs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/labs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/med_routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/med_routes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/micro_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/micro_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/other_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/other_notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/procedures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/procedures.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/recent_results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/recent_results.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/routes_mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/routes_mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/vitals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000101/vitals.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/ECHO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/ECHO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/EKG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/EKG.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/ER.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/ER.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/HP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/HP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/OP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/OP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/PGN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/PGN.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/RAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/RAD.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/case_test_meds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/case_test_meds.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/demographics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/demographics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/display_med_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/display_med_names.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/global_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/global_time.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/labs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/labs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/med_routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/med_routes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/micro_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/micro_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/other_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/other_notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/procedures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/procedures.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/recent_results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/recent_results.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/routes_mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/routes_mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/vitals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000102/vitals.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/ECHO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/ECHO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/EKG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/EKG.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/ER.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/ER.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/HP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/HP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/OP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/OP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/PGN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/PGN.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/RAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/RAD.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/case_test_meds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/case_test_meds.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/demographics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/demographics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/display_med_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/display_med_names.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/global_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/global_time.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/labs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/labs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/med_routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/med_routes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/micro_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/micro_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/other_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/other_notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/procedures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/procedures.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/recent_results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/recent_results.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/routes_mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/routes_mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/vitals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t1/10000103/vitals.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/ECHO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/ECHO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/EKG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/EKG.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/ER.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/ER.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/HP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/HP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/OP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/OP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/PGN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/PGN.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/RAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/RAD.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/case_test_meds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/case_test_meds.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/demographics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/demographics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/display_med_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/display_med_names.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/global_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/global_time.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/labs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/labs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/med_routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/med_routes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/micro_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/micro_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/other_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/other_notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/procedures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/procedures.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/recent_results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/recent_results.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/routes_mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/routes_mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/vitals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000101/vitals.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/ECHO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/ECHO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/EKG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/EKG.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/ER.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/ER.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/HP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/HP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/OP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/OP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/PGN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/PGN.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/RAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/RAD.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/case_test_meds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/case_test_meds.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/demographics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/demographics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/display_med_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/display_med_names.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/global_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/global_time.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/labs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/labs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/med_routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/med_routes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/micro_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/micro_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/other_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/other_notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/procedures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/procedures.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/recent_results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/recent_results.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/routes_mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/routes_mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/vitals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000102/vitals.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/ECHO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/ECHO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/EKG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/EKG.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/ER.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/ER.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/HP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/HP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/OP.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/OP.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/PGN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/PGN.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/RAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/RAD.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/case_test_meds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/case_test_meds.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/demographics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/demographics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/display_med_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/display_med_names.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/global_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/global_time.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/labs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/labs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/med_routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/med_routes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/micro_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/micro_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/other_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/other_notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/procedures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/procedures.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/recent_results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/recent_results.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/routes_mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/routes_mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/vitals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/cases_t2/10000103/vitals.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/stored_data_structures/display_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/stored_data_structures/display_names.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/stored_data_structures/global_params.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/stored_data_structures/global_params.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/stored_data_structures/group_membership.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/stored_data_structures/group_membership.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/demo_study/stored_data_structures/group_order_labs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/stored_data_structures/group_order_labs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/demo_study/participant_info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/demo_study/participant_info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/demo_study/participant_infoparticipant_info.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LEMRinterface/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1671">
-              <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+            <state relative-caret-position="281">
+              <caret line="56" column="33" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="33" />
               <folding>
                 <element signature="e#813#849#0" expanded="true" />
               </folding>
@@ -166,17 +52,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LEMRinterface/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="41" column="27" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="27" />
+            <state relative-caret-position="685">
+              <caret line="46" column="21" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LEMRinterface/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="297" selection-start-line="297" selection-end-line="297" />
+            <state relative-caret-position="281">
+              <caret line="134" column="35" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="35" />
               <folding>
                 <element signature="e#815#863#0" expanded="true" />
               </folding>
@@ -185,28 +71,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/home_screen.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="47" column="100" selection-start-line="47" selection-start-column="82" selection-end-line="47" selection-end-column="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/index_3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5831">
+            <state relative-caret-position="6290">
               <caret line="370" column="148" selection-start-line="370" selection-start-column="136" selection-end-line="370" selection-end-column="148" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/static/js/emr_3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="234" column="29" lean-forward="true" selection-start-line="234" selection-start-column="29" selection-end-line="234" selection-end-column="29" />
+              <folding>
+                <element signature="e#198#204#0" expanded="true" />
+                <element signature="e#310#316#0" expanded="true" />
+                <element signature="e#425#431#0" expanded="true" />
+                <element signature="e#544#550#0" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/eye_test_template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/selection_screen.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LEMRinterface/templatetags/custom_tags.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -215,24 +131,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LEMRProject/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LEMRProject/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LEMRinterface/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -241,25 +143,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>WebEMR</find>
-      <find>GUI</find>
-      <find>django.urls</find>
-      <find>update_participant_info</find>
-      <find>middle</find>
-      <find>curr_data</find>
-      <find>print</find>
-      <find>start_eye_stream</find>
-      <find>.json'</find>
-      <find>primary_key</find>
-      <find>local_lemr</find>
-      <find>crisma</find>
-      <find>join</find>
-      <find>load_med_maps</find>
-      <find>context</find>
-      <find>local_dir</find>
       <find>interface</find>
       <find>os</find>
-      <find>user_id</find>
       <find>med</find>
       <find>previous</find>
       <find>json.load</find>
@@ -268,11 +153,32 @@
       <find>os.</find>
       <find>route</find>
       <find>ECHO</find>
+      <find>participant_info</find>
+      <find>determine_next_url</find>
+      <find>location</find>
+      <find>in_study</find>
+      <find>local_dir</find>
+      <find>let</find>
+      <find>print_to_manual_input_file</find>
+      <find>save_pi</find>
+      <find>create_post</find>
+      <find>send_div_locations</find>
+      <find>save_input</find>
+      <find>save_pixel</find>
+      <find>save_pixelmap</find>
+      <find>save_pix</find>
+      <find>getBoundingClientRect</find>
+      <find>dynamic_interface_storage</find>
+      <find>dynamic_interface_</find>
+      <find>save_pixe</find>
+      <find>update_participant_info</find>
+      <find>user_id</find>
     </findStrings>
     <replaceStrings>
       <replace>LEMR</replace>
       <replace>interface</replace>
       <replace>.txt'</replace>
+      <replace>var</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -287,15 +193,17 @@
         <option value="$PROJECT_DIR$/WebEmrGui/views.py" />
         <option value="$PROJECT_DIR$/LEMRinterface/loaddata.py" />
         <option value="$PROJECT_DIR$/LEMRinterface/eye_tracking_scripts.py" />
-        <option value="$PROJECT_DIR$/LEMRinterface/models.py" />
         <option value="$PROJECT_DIR$/LEMRProject/settings.py" />
         <option value="$PROJECT_DIR$/LEMRProject/config.json" />
         <option value="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/home_screen.html" />
-        <option value="$PROJECT_DIR$/LEMRinterface/utils.py" />
         <option value="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/index_3.html" />
-        <option value="$PROJECT_DIR$/LEMRinterface/templatetags/custom_tags.py" />
         <option value="$PROJECT_DIR$/LEMRinterface/urls.py" />
         <option value="$PROJECT_DIR$/LEMRinterface/views.py" />
+        <option value="$PROJECT_DIR$/LEMRinterface/utils.py" />
+        <option value="$PROJECT_DIR$/LEMRinterface/templatetags/custom_tags.py" />
+        <option value="$PROJECT_DIR$/LEMRinterface/models.py" />
+        <option value="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/eye_test_template.html" />
+        <option value="$PROJECT_DIR$/LEMRinterface/static/js/emr_3.js" />
       </list>
     </option>
   </component>
@@ -321,6 +229,32 @@
             <path>
               <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -402,18 +336,18 @@
       <workItem from="1566322734641" duration="704000" />
       <workItem from="1567259347356" duration="7268000" />
       <workItem from="1567441393285" duration="5785000" />
-      <workItem from="1571970077495" duration="8571000" />
+      <workItem from="1571970077495" duration="8749000" />
+      <workItem from="1572026830941" duration="3691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22328000" />
+    <option name="totallyTimeSpent" value="26197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.2521322" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.25479743" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -472,13 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/eye_test_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="126" selection-start-line="39" selection-start-column="117" selection-end-line="39" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LEMRProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -489,63 +416,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LEMRProject/config.json">
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/home_screen.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="799">
+          <caret line="47" column="100" selection-start-line="47" selection-start-column="82" selection-end-line="47" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LEMRProject/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LEMRinterface/models.py">
+    <entry file="file://$PROJECT_DIR$/LEMRProject/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LEMRinterface/templatetags/custom_tags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LEMRinterface/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="297" selection-start-line="297" selection-end-line="297" />
-          <folding>
-            <element signature="e#815#863#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LEMRinterface/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/home_screen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="47" column="100" selection-start-line="47" selection-start-column="82" selection-end-line="47" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/index_3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5831">
-          <caret line="370" column="148" selection-start-line="370" selection-start-column="136" selection-end-line="370" selection-end-column="148" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/selection_screen.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/SYM_LIST.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -554,12 +460,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/eye_test_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/index_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6290">
+          <caret line="370" column="148" selection-start-line="370" selection-start-column="136" selection-end-line="370" selection-end-column="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/static/js/emr_3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="234" column="29" lean-forward="true" selection-start-line="234" selection-start-column="29" selection-end-line="234" selection-end-column="29" />
+          <folding>
+            <element signature="e#198#204#0" expanded="true" />
+            <element signature="e#310#316#0" expanded="true" />
+            <element signature="e#425#431#0" expanded="true" />
+            <element signature="e#544#550#0" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LEMRinterface/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1671">
-          <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        <state relative-caret-position="281">
+          <caret line="56" column="33" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="33" />
           <folding>
             <element signature="e#813#849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="134" column="35" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="35" />
+          <folding>
+            <element signature="e#815#863#0" expanded="true" />
           </folding>
         </state>
       </provider>

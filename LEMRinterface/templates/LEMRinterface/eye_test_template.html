@@ -27,6 +27,7 @@
 
 <script>
     {% autoescape off %}
+        var dynamic_interface_storage = false;  // set to true if using an eye tracker
         var divsize = 7;
         var counter = 0;
         var dict_x = [0, 1920*0.1+4, 1920*0.9+4, 1920*0.5+4, 1920*0.1+4, 1920*0.9+4, 1920*0.1+4, 1920*0.5+4, 1920*0.9+4, 1920*0.5+4];
@@ -94,34 +95,37 @@
 
 
 function send_div_locations(){
-    var curr_timestamp = Date.now();
-    var curr_pixelmap = [];
+    if (dynamic_interface_storage && false) {
+        var curr_timestamp = Date.now();
+        var curr_pixelmap = [];
 
-    $('#c').each(function () {
-        var edges = this.getBoundingClientRect();
-        var curr_array = [Math.round(edges.top), Math.round(edges.left), Math.round(edges.bottom), Math.round(edges.right)];
-        curr_pixelmap.push(curr_array);
-    });
+        $('#c').each(function () {
+            var edges = this.getBoundingClientRect();
+            var curr_array = [Math.round(edges.top), Math.round(edges.left), Math.round(edges.bottom), Math.round(edges.right)];
+            curr_pixelmap.push(curr_array);
+        });
 
-    create_post(curr_timestamp.toString(), curr_pixelmap.toString());
+        create_post(curr_timestamp.toString(), curr_pixelmap.toString());
+    }
 }
 
 function create_post(curr_timestamp, curr_pixelmap) {
-    console.log("create post is working!"); // sanity check
-    var csrf_token = getCookie('csrftoken');
-    $.ajax({
-        url : "http://127.0.0.1:8000/LEMRinterface/save_pixelmap/", // the endpoint
-        type : "POST", // http method
-        data : { csrfmiddlewaretoken: csrf_token, the_pixelmap : curr_pixelmap, the_timestamp : curr_timestamp, pat_id : 'calibration'}, // data sent with the post request
-        // handle a successful response
-        success : function(msg) {
-            console.log(msg); // another sanity check
-        },
-        // handle a non-successful response
-        error : function(xhr,errmsg,err) {
-           console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
-        }
-    });
+    if (dynamic_interface_storage && false){
+        console.log("create post is working!"); // sanity check
+        var csrf_token = getCookie('csrftoken');
+        $.ajax({
+            url : "http://127.0.0.1:8000/LEMRinterface/save_pixelmap/", // the endpoint
+            type : "POST", // http method
+            data : { csrfmiddlewaretoken: csrf_token, the_pixelmap : curr_pixelmap, the_timestamp : curr_timestamp, pat_id : 'calibration'}, // data sent with the post request
+            // handle a successful response
+            success : function(msg) {
+                console.log(msg); // another sanity check
+            },
+            // handle a non-successful response
+            error : function(xhr,errmsg,err) {
+                console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+        }})
+    }
     return false;
 }
 
