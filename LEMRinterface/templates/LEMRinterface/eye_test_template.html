@@ -37,7 +37,7 @@
             if (counter == 10) {
                 var message =
                     "<h1>Calibration Complete!</h1>"
-                    + "<button id='continue_button' onclick=continue_clicked('http://127.0.0.1:8000/WebEmrGui/{{ next_case }}/{{ user_id }}/1/0/')>Continue</button></a>";
+                    + "<button id='continue_button' onclick=continue_clicked('http://127.0.0.1:8000/LEMRinterface/{{ next_case }}/{{ user_id }}/1/0/')>Continue</button></a>";
                 console.log(message);
                 $('#directions').html(message).fadeIn(0);
                 clearInterval(refreshIntervalId);
@@ -110,7 +110,7 @@ function create_post(curr_timestamp, curr_pixelmap) {
     console.log("create post is working!"); // sanity check
     var csrf_token = getCookie('csrftoken');
     $.ajax({
-        url : "http://127.0.0.1:8000/WebEmrGui/save_pixelmap/", // the endpoint
+        url : "http://127.0.0.1:8000/LEMRinterface/save_pixelmap/", // the endpoint
         type : "POST", // http method
         data : { csrfmiddlewaretoken: csrf_token, the_pixelmap : curr_pixelmap, the_timestamp : curr_timestamp, pat_id : 'calibration'}, // data sent with the post request
         // handle a successful response

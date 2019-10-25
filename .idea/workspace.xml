@@ -3,75 +3,71 @@
   <component name="ChangeListManager">
     <list default="true" id="64ca1dd6-3523-4e31-8bb8-40700e8464f3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/LEMRinterface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LEMRinterface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/calibrated_summary_bivariate-gen.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33682264_1518048567.15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33682264_1518048573.64.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33704704_1518048536.73.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33704704_1518048544.42.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33743133_1518048582.37.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/33743133_1518048587.42.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/eye_stream/calibration_1518048514.75.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33682264_1518048571.76-1518048572.52_task-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33682264_1518048578.3-1518048579.11_task-2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33682264_1518048579.11-1518048580.19_task-3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33682264_1518048580.19-1518048581.27_task-4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048540.09-1518048544.28_task-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048547.8-1518048552.46_task-2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048552.46-1518048556.29_task-3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048556.29-1518048559.3_task-4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33704704_1518048559.3-1518048567.04_task-5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048585.58-1518048587.31_task-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048594.13-1518048598.54_task-2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048598.54-1518048600.02_task-3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048600.02-1518048601.94_task-4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048602.25-1518048604.78_task-6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/interaction_stream/33743133_1518048604.78-1518048606.79_task-7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/manual_input/pat_33682264.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/manual_input/pat_33704704.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/manual_input/pat_33743133.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/notemaps/pat_33682264.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/notemaps/pat_33704704.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/notemaps/pat_33743133.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/pixelmaps/pat_33682264.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/pixelmaps/pat_33704704.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/pixelmaps/pat_33743133.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048758.57/pixelmaps/pat_calibration.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/calibrated_summary_bivariate-gen.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33682264_1518048869.1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33682264_1518048875.64.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33704704_1518048849.55.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33704704_1518048854.19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33704704_1518048860.34.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33743133_1518048890.99.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/33743133_1518048895.77.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/eye_stream/calibration_1518048828.2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33682264_1518048873.82-1518048874.55_task-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33682264_1518048880.24-1518048881.12_task-2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33682264_1518048881.12-1518048882.67_task-3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33682264_1518048882.67-1518048890.91_task-4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33704704_1518048853.26-1518048854.1_task-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33704704_1518048857.9-1518048860.27_task-2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048893.88-1518048894.68_task-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048898.36-1518048899.24_task-2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048899.24-1518048900.39_task-3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048900.39-1518048902.57_task-4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048902.88-1518048903.9_task-6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/interaction_stream/33743133_1518048903.9-1518048905.77_task-7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/manual_input/pat_33682264.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/manual_input/pat_33704704.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/manual_input/pat_33743133.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/notemaps/pat_33682264.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/notemaps/pat_33704704.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/notemaps/pat_33743133.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/pixelmaps/pat_33682264.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/pixelmaps/pat_33704704.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/pixelmaps/pat_33743133.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/eye_tracking/interface_demo/run-1518048906.86/pixelmaps/pat_calibration.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/participant_info/interface_demo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/evaluation_study/participant_info/participant_info.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/eye_tests/4_pixel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/.idea/WebEmrGui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/.idea/LEMRinterface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/audio_recording_scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/audio_recording_scripts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/eye_tracking_scripts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/loaddata.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/loaddata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/bootstrap-theme.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/lavish-bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/lavish-bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/css/old.bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/css/old.bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/custom_css/bs_3.css" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/custom_css/bs_3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/fonts/vertical_curser.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/fonts/vertical_curser.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/jcode/highstock.js" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/jcode/highstock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/jcode/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/jcode/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/js/emr_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/js/emr_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/js/less-1.5.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/js/less-1.5.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/static/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/static/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/templates/WebEmrGui/eye_test_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/eye_test_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/templates/WebEmrGui/home_screen.html" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/home_screen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/templates/WebEmrGui/index_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/index_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/templates/WebEmrGui/micro_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/micro_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/templates/WebEmrGui/procedure_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/procedure_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/templates/WebEmrGui/report_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/report_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/templates/WebEmrGui/selection_screen.html" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/selection_screen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/templatetags/custom_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templatetags/custom_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrGui/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/.idea/WebEmrProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/.idea/LEMRProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRinterface/templatetags/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmrProject/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/LEMRProject/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,40 +75,152 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebEmrGui/views.py">
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="19">
+              <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+              <folding>
+                <element signature="e#813#849#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebEmrGui/eye_tracking_scripts.py">
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="743">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="154" column="17" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/home_screen.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="770">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/index_3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5126" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/eye_test_template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="39" column="126" selection-start-line="39" selection-start-column="117" selection-end-line="39" selection-end-column="126" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRProject/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
+              <folding>
+                <element signature="e#940#949#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRProject/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LEMRProject/__init__.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebEmrGui/loaddata.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebEmrGui/models.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/LEMRinterface/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>WebEMR</find>
+      <find>GUI</find>
+      <find>django.urls</find>
+      <find>update_participant_info</find>
+      <find>middle</find>
+      <find>curr_data</find>
+      <find>print</find>
+      <find>start_eye_stream</find>
+      <find>.json'</find>
+      <find>primary_key</find>
+      <find>local_lemr</find>
+      <find>crisma</find>
+      <find>join</find>
+      <find>load_med_maps</find>
+      <find>context</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>LEMR</replace>
+      <replace>interface</replace>
+      <replace>.txt'</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WebEmrProject/settings.py" />
+        <option value="$PROJECT_DIR$/WebEmrProject/urls.py" />
+        <option value="$PROJECT_DIR$/WebEmrGui/eye_tracking_scripts.py" />
+        <option value="$PROJECT_DIR$/WebEmrGui/views.py" />
+        <option value="$PROJECT_DIR$/LEMRinterface/loaddata.py" />
+        <option value="$PROJECT_DIR$/LEMRinterface/eye_tracking_scripts.py" />
+        <option value="$PROJECT_DIR$/LEMRinterface/models.py" />
+        <option value="$PROJECT_DIR$/LEMRProject/settings.py" />
+        <option value="$PROJECT_DIR$/LEMRProject/config.json" />
+        <option value="$PROJECT_DIR$/LEMRinterface/utils.py" />
+        <option value="$PROJECT_DIR$/LEMRinterface/urls.py" />
+        <option value="$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/home_screen.html" />
+        <option value="$PROJECT_DIR$/LEMRinterface/views.py" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="92" />
-    <option name="y" value="-9" />
+    <option name="x" value="53" />
+    <option name="y" value="-19" />
     <option name="width" value="1838" />
     <option name="height" value="1098" />
   </component>
@@ -131,12 +239,31 @@
             <path>
               <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
-              <item name="WebEmrGui" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
               <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
-              <item name="WebEmrProject" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LEMRinterface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LEMRinterface" type="462c0819:PsiDirectoryNode" />
+              <item name="LEMRProject" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -155,6 +282,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -210,20 +338,20 @@
       <option name="presentableId" value="Default" />
       <updated>1549056622482</updated>
       <workItem from="1566322734641" duration="704000" />
+      <workItem from="1567259347356" duration="7268000" />
+      <workItem from="1567441393285" duration="5785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="704000" />
+    <option name="totallyTimeSpent" value="13757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="-7" width="1470" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" order="0" visible="true" weight="0.25283286" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -236,6 +364,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -247,24 +376,107 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/views.py">
+    <entry file="file://$PROJECT_DIR$/models/eye_tests/4_pixel.txt" />
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/eye_tracking_scripts.py" />
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/.idea/LEMRinterface.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="289">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/eye_tests/4_pixel.txt">
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/loaddata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10659">
+          <caret line="649" column="36" selection-start-line="649" selection-start-column="36" selection-end-line="649" selection-end-column="36" />
+          <folding>
+            <element signature="e#881#928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/eye_tracking_scripts.py">
+    <entry file="file://$PROJECT_DIR$/LEMRProject/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/loaddata.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebEmrGui/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/LEMRProject/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/index_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5126" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/eye_test_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="39" column="126" selection-start-line="39" selection-start-column="117" selection-end-line="39" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRProject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
+          <folding>
+            <element signature="e#940#949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/templates/LEMRinterface/home_screen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="154" column="17" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LEMRinterface/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <folding>
+            <element signature="e#813#849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

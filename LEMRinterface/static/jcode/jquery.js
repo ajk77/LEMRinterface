@@ -521,8 +521,8 @@ jQuery.extend({
 		return concat.apply( [], ret );
 	},
 
-	// A global GUID counter for objects
-	guid: 1,
+	// A global interfaceD counter for objects
+	interfaced: 1,
 
 	// Bind a function to a context, optionally partially applying any
 	// arguments.
@@ -547,8 +547,8 @@ jQuery.extend({
 			return fn.apply( context || this, args.concat( slice.call( arguments ) ) );
 		};
 
-		// Set the guid of unique handler to the same of original handler, so it can be removed
-		proxy.guid = fn.guid = fn.guid || jQuery.guid++;
+		// Set the interfaced of unique handler to the same of original handler, so it can be removed
+		proxy.interfaced = fn.interfaced = fn.interfaced || jQuery.interfaced++;
 
 		return proxy;
 	},
@@ -3708,7 +3708,7 @@ function internalData( elem, name, data, pvt /* Internal Use Only */ ) {
 		// Only DOM nodes need a new unique ID for each element since their data
 		// ends up in the global cache
 		if ( isNode ) {
-			id = elem[ internalKey ] = deletedIds.pop() || jQuery.guid++;
+			id = elem[ internalKey ] = deletedIds.pop() || jQuery.interfaced++;
 		} else {
 			id = internalKey;
 		}
@@ -4293,8 +4293,8 @@ jQuery.event = {
 		}
 
 		// Make sure that the handler has a unique ID, used to find/remove it later
-		if ( !handler.guid ) {
-			handler.guid = jQuery.guid++;
+		if ( !handler.interfaced ) {
+			handler.interfaced = jQuery.interfaced++;
 		}
 
 		// Init the element's event structure and main handler, if this is the first
@@ -4341,7 +4341,7 @@ jQuery.event = {
 				origType: origType,
 				data: data,
 				handler: handler,
-				guid: handler.guid,
+				interfaced: handler.interfaced,
 				selector: selector,
 				needsContext: selector && jQuery.expr.match.needsContext.test( selector ),
 				namespace: namespaces.join(".")
@@ -4367,8 +4367,8 @@ jQuery.event = {
 			if ( special.add ) {
 				special.add.call( elem, handleObj );
 
-				if ( !handleObj.handler.guid ) {
-					handleObj.handler.guid = handler.guid;
+				if ( !handleObj.handler.interfaced ) {
+					handleObj.handler.interfaced = handler.interfaced;
 				}
 			}
 
@@ -4426,7 +4426,7 @@ jQuery.event = {
 				handleObj = handlers[ j ];
 
 				if ( ( mappedTypes || origType === handleObj.origType ) &&
-					( !handler || handler.guid === handleObj.guid ) &&
+					( !handler || handler.interfaced === handleObj.interfaced ) &&
 					( !tmp || tmp.test( handleObj.namespace ) ) &&
 					( !selector || selector === handleObj.selector || selector === "**" && handleObj.selector ) ) {
 					handlers.splice( j, 1 );
@@ -5213,8 +5213,8 @@ jQuery.fn.extend({
 				jQuery().off( event );
 				return origFn.apply( this, arguments );
 			};
-			// Use same guid so caller can remove using origFn
-			fn.guid = origFn.guid || ( origFn.guid = jQuery.guid++ );
+			// Use same interfaced so caller can remove using origFn
+			fn.interfaced = origFn.interfaced || ( origFn.interfaced = jQuery.interfaced++ );
 		}
 		return this.each( function() {
 			jQuery.event.add( this, types, fn, data, selector );

@@ -1,5 +1,5 @@
 """
-WebEmrGui/audio_recording_scripts.py
+LEMRinterface/audio_recording_scripts.py
 version 1.0
 package github.com/ajk77/LEMRinterface
 Created by AndrewJKing.com|@andrewsjourney

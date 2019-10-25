@@ -1,5 +1,5 @@
 """
-WebEmrGui/tests.py
+LEMRinterface/tests.py
 version 1.0
 package github.com/ajk77/LEMRinterface
 Modified by AndrewJKing.com|@andrewsjourney

@@ -1,5 +1,5 @@
 """
-WebEmrProject/settings.py
+LEMRProject/settings.py
 version 1.0
 package github.com/ajk77/LEMRinterface
 Modified by AndrewJKing.com|@andrewsjourney
@@ -25,9 +25,12 @@ You should have received a copy of the GNU General Public License
 along with LEMRinterface.  If not, see <https://www.gnu.org/licenses/>.
 """
 
-# Django settings for WebEmrProject project.
+# Django settings for LEMRProject project.
 
 import os
+import json
+
+config = json.loads(json.load(open("LEMRProject/config.json", 'r')))
 
 DEBUG = True
 
@@ -40,19 +43,19 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '$$$$$ENTER DATABASE NAME$$$$$',  # Or path to database file if using sqlite3.
-        'USER': '$$$$$ENTER USER ID$$$$$',  # Not used with sqlite3.
-        'PASSWORD': '$$$$$ENTER DATABASE PASSWORD$$$$$',  # Not used with sqlite3.
-        'HOST': '',  # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',  # Set to empty string for default. Not used with sqlite3.
+        'NAME': config['default_NAME'],  # Or path to database file if using sqlite3.
+        'USER': config['default_USER'],  # Not used with sqlite3.
+        'PASSWORD': config['default_PASSWORD'],  # Not used with sqlite3.
+        'HOST': config['default_HOST'],  # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': config['default_PORT'],  # Set to empty string for default. Not used with sqlite3.
     },
     'remote': {
-        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '$$$$$ENTER DATABASE NAME$$$$$',                      # Or path to database file if using sqlite3.
-        'USER': '$$$$$ENTER USER ID$$$$$',                      # Not used with sqlite3.
-        'PASSWORD': '$$$$$ENTER DATABASE PASSWORD$$$$$',                  # Not used with sqlite3.
-        'HOST': '$$$$$ENTER REMOSTE HOST$$$$$',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '$$$$$ENTER PORT$$$$$',                      # Set to empty string for default. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.mysql',   # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': config['remote_NAME'],          # Or path to database file if using sqlite3.
+        'USER': config['remote_USER'],          # Not used with sqlite3.
+        'PASSWORD': config['remote_PASSWORD'],  # Not used with sqlite3.
+        'HOST': config['remote_HOST'],          # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': config['remote_PORT'],          # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -121,7 +124,7 @@ STATICFILES_FINDERS = (
 SECRET_KEY = '$$$$$ENTER SECRET KEY$$$$$'
 
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -131,10 +134,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'WebEmrProject.urls'
+ROOT_URLCONF = 'LEMRProject.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'WebEmrProject.wsgi.application'
+WSGI_APPLICATION = 'LEMRProject.wsgi.application'
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -166,7 +169,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'WebEmrGui'
+    'LEMRinterface'
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

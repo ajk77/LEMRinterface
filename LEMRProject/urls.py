@@ -1,5 +1,5 @@
 """
-WebEmrProject/urls.py
+LEMRProject/urls.py
 version 1.0
 package github.com/ajk77/LEMRinterface
 Modified by AndrewJKing.com|@andrewsjourney
@@ -29,12 +29,14 @@ from django.conf.urls import include, url
 # from django.contrib import admin
 # admin.autodiscover()
 
+app_name = "LEMRinterface"
+
 urlpatterns = [
-    url(r'^WebEmrGui/', include('WebEmrGui.urls'))
+    url(r'^LEMRinterface/', include('LEMRinterface.urls'))
     ]
 # Examples:
-# url(r'^$', 'WebEmrProject.views.home', name='home'),
-# url(r'^WebEmrProject/', include('WebEmrProject.foo.urls')),
+# url(r'^$', 'LEMRProject.views.home', name='home'),
+# url(r'^LEMRProject/', include('LEMRProject.foo.urls')),
 
 # Uncomment the admin/doc line below to enable admin documentation:
 # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

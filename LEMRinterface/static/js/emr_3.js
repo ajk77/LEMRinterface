@@ -217,7 +217,7 @@ function create_manual_input_post(new_link) {
             return_selected_items = selected_items.toString()
         }
         $.ajax({
-            url : "http://127.0.0.1:8000/WebEmrGui/save_input/", // the endpoint
+            url : "http://127.0.0.1:8000/LEMRinterface/save_input/", // the endpoint
             type : "POST", // http method
             data : { csrfmiddlewaretoken: csrf_token, the_timestamp : Date.now().toString(), pat_id : patient_id, selections : return_selected_items, rating : case_difficulty, reason: clinical_impact }, // data sent with the post request
             // handle a successful response
@@ -240,7 +240,7 @@ function create_manual_input_post(new_link) {
 function create_post(id, curr_timestamp, curr_pixelmap, curr_groups) {
     let csrf_token = getCookie('csrftoken');
     $.ajax({
-        url : "http://127.0.0.1:8000/WebEmrGui/save_pixelmap/", // the endpoint
+        url : "http://127.0.0.1:8000/LEMRinterface/save_pixelmap/", // the endpoint
         type : "POST", // http method
         data : { csrfmiddlewaretoken: csrf_token, the_pixelmap : curr_pixelmap, the_timestamp : curr_timestamp, pat_id : id, the_groups : curr_groups  }, // data sent with the post request
         // handle a successful response
@@ -356,7 +356,7 @@ function remove_directions(){
 // Allows user to take a break and shows calibration screen on resume.
 function take_a_break(user_id){
     $('#break_button').attr("disabled", true);
-    link_press("http://127.0.0.1:8000/WebEmrGui/home/" + user_id + '/');
+    link_press("http://127.0.0.1:8000/LEMRinterface/home/" + user_id + '/');
 
     return false;
 }

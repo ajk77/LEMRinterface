@@ -1,5 +1,5 @@
 """
-WebEmrGui/utils.py
+LEMRinterface/utils.py
 version 1.0
 package github.com/ajk77/LEMRinterface
 Created by AndrewJKing.com|@andrewsjourney
@@ -22,10 +22,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with LEMRinterface.  If not, see <https://www.gnu.org/licenses/>.
 """
-from models import marstorootcodes
-from models import rootgroupmember
-from models import displayparams
-from models import a_groupmember
+from LEMRinterface.models import marstorootcodes
+from LEMRinterface.models import rootgroupmember
+from LEMRinterface.models import displayparams
+from LEMRinterface.models import a_groupmember
 import os
 import time
 
@@ -57,12 +57,12 @@ def print_to_pixelmap_file(local_dir, is_new_patient, patient_id, str_map, times
         str_out = "#refresh\n"
         out_file.write(str_out)
         print_to_notemap_file(local_dir, 1, patient_id, str_out)
-        print '\t...starting pixelmap for ' + str(patient_id)
+        print('\t...starting pixelmap for ' + str(patient_id))
     elif is_new_patient == 2:
         str_out = '#end:'+str(float(timestamp)/1000)+'\n'
         out_file.write(str_out)
         print_to_notemap_file(local_dir, 2, patient_id, str_out)
-        print '\t...ending pixelmap for ' + str(patient_id)
+        print('\t...ending pixelmap for ' + str(patient_id))
     else:
         out_file.write('>>>' + str(float(timestamp)/1000)+'\n')
         out_file.write(str_map+'\n')
@@ -72,7 +72,7 @@ def print_to_pixelmap_file(local_dir, is_new_patient, patient_id, str_map, times
 
 
 def print_to_manual_input_file(local_dir, patient_id, timestamp, selections, rating, reason):
-    print '\t___printing to input file ' + str(patient_id)
+    print('\t___printing to input file ' + str(patient_id))
     out_file = open(local_dir + "manual_input/pat_" + str(patient_id) + '.txt', 'w+')
     out_file.write('>>>' + str(float(timestamp) / 1000) + '\n')
     out_file.write(selections + '\n')
@@ -96,7 +96,7 @@ def print_to_notemap_file(local_dir, is_new_patient, patient_id, str_out):
 
 
 def print_to_issue_report_file(local_dir, patient_id, timestamp, issue_text):
-    print '\t---printing to issue report file ' + str(patient_id)
+    print('\t---printing to issue report file ' + str(patient_id))
     out_file = open(local_dir + "manual_input/issues_for_pat_" + str(patient_id) + '.txt', 'a+')
     out_file.write('>>>' + str(float(timestamp) / 1000) + '\n')
     out_file.write(issue_text + '\n')
@@ -150,6 +150,23 @@ def update_participant_info(user_id, location):
     return
 
 
+def get_next_case(user_file, case_count):
+    with open(user_file, 'r') as in_file:
+        curr_case = 0
+        for line in in_file:
+            if line[0] == '#':
+                continue
+            else:
+                if case_count != curr_case:
+                    curr_case += 1
+                    continue
+                else:
+                    split_line = line.rstrip().split(',')
+                    if len(split_line):
+                        return split_line[0]
+    print('*** Matching ID was not found')
+    return 'error'
+
 def determine_next_url(location, user_id, time_cutoff, curr_patient_id):
     in_file = open(location + user_id + '.txt', 'r')
     lines = in_file.readlines()
@@ -169,7 +186,7 @@ def determine_next_url(location, user_id, time_cutoff, curr_patient_id):
                 if user_id != 'first_four':
                     update_participant_info(user_id, location)
                 return [split_line[0], 1, store[0], store[1]]  # show_highlights and only_highlights from previous row
-    print '*** Matching ID was not found'
+    print('*** Matching ID was not found')
     return ['error', 'here']
 
 

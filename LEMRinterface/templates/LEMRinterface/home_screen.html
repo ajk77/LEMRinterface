@@ -45,17 +45,10 @@
 </p>
     <table width="50%" border="1"><tr><th>Participants</th><th>Last Accessed</th><th>Cases Complete</th></tr>
     {% for user in full %}
-        <tr><th><a href="http://127.0.0.1:8000/WebEmrGui/eye_test/{{ user.name }}/"><button>{{ user.name }}</button></a> </th><th>{{ user.access }} </th><th> {{ user.count }}</th></tr>
+        <tr><th><a href="http://127.0.0.1:8000/LEMRinterface/{{ user.next_case }}/{{ user.user_id }}"><button>{{ user.name }}</button></a> </th><th>{{ user.access }} </th><th> {{ user.count }}</th></tr>
     {% endfor %}
     </table>
 </div>
-
-<!--
-<div class="info-div">
-    <p><b>Reload Patient Cases</b></p>
-    <p>This program pulls the patient data from the database.</p>
-    <p><a href="http://127.0.0.1:8000/WebEmrGui/load_cases/"><button>Load</button></a></p></div>
--->
 
 </body>
 </html>

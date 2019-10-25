@@ -1,5 +1,5 @@
 """
-WebEmrGui/urls.py
+LEMRinterface/urls.py
 version 1.0
 package github.com/ajk77/LEMRinterface
 Modified by AndrewJKing.com|@andrewsjourney
@@ -42,11 +42,7 @@ urlpatterns = [
     url(r'^(?P<patient_id>\d+)/(?P<user_id>\w+)/$', views.detail, name='detail'),
     url(r'^(?P<patient_id>\d+)/(?P<user_id>\w+)/(?P<time_cutoff>\d+)/(?P<previous_patient_id>\d+)/$',
         views.detail, name='detail'),
-    url(r'^recording/$', views.recording, name='recording'),
-    url(r'^save_pixelmap/$', views.save_pixelmap, name='save_pixelmap'),
     url(r'^save_input/$', views.save_input, name='save_input'),
-    url(r'^save_issue/$', views.save_issue, name='save_issue'),
-    url(r'^eye_test/(?P<user_id>\w+)/$', views.eye_test, name='eye_test'),
     url(r'^end/(?P<user_id>\w+)/1/(?P<previous_patient_id>\d+)/', views.end_of_study, name='end'),
     url(r'^load_cases/$', views.loadcasedata, name='load_cases')
     ]

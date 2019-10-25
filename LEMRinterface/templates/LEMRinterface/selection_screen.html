@@ -50,15 +50,15 @@
     <ul class="nav navbar-nav">
         <li>
             {% if prev_enabled %}
-                <a href="/WebEmrGui/{{ prev_patient }}/{{ version_num }}/{{ study_id }}/{{ demographics_dict.id }}" onclick='show_loading()' style="color:greenyellow"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+                <a href="/LEMRinterface/{{ prev_patient }}/{{ version_num }}/{{ study_id }}/{{ demographics_dict.id }}" onclick='show_loading()' style="color:greenyellow"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
             {% else %}
                 <a  style="color:greenyellow"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></a>
             {% endif %}
         </li>
-        <li><a href="/WebEmrGui/"><span class="glyphicon glyphicon-home" aria-hidden="true" style="color:greenyellow"></span></a></li>
+        <li><a href="/LEMRinterface/"><span class="glyphicon glyphicon-home" aria-hidden="true" style="color:greenyellow"></span></a></li>
         <li style="border-right:solid;border-width:6px;border-right-color:#B0B0B0">
             {% if next_enabled %}
-                <a href="/WebEmrGui/{{ next_patient }}/{{ version_num }}/{{ study_id }}/{{ demographics_dict.id }}" onclick='show_loading()'><span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="color:greenyellow"></span></a>
+                <a href="/LEMRinterface/{{ next_patient }}/{{ version_num }}/{{ study_id }}/{{ demographics_dict.id }}" onclick='show_loading()'><span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="color:greenyellow"></span></a>
             {% else %}
                 <a><span class="glyphicon glyphicon-stop" aria-hidden="true" style="color:greenyellow"></span></a>
             {% endif %}
@@ -233,13 +233,13 @@
         </li></ul>
 
         <div class="contentArea tab-content">
-        {% include "WebEmrGui/report_template.html" with report_dict=eeg_report_dict div_id="eeg-reports" %}
-        {% include "WebEmrGui/report_template.html" with report_dict=ekg_report_dict div_id="ekg-reports" %}
-        {% include "WebEmrGui/report_template.html" with report_dict=handp_report_dict div_id="handp-reports" %}
-        {% include "WebEmrGui/report_template.html" with report_dict=prog_note_dict div_id="progress-notes" %}
-        {% include "WebEmrGui/report_template.html" with report_dict=op_note_dict div_id="op-notes" %}
-        {% include "WebEmrGui/report_template.html" with report_dict=rad_report_dict div_id="rad-reports" %}
-        {% include "WebEmrGui/procedure_template.html" with procedures_dict=procedures2 div_id="procedures" %}
+        {% include "LEMRinterface/report_template.html" with report_dict=eeg_report_dict div_id="eeg-reports" %}
+        {% include "LEMRinterface/report_template.html" with report_dict=ekg_report_dict div_id="ekg-reports" %}
+        {% include "LEMRinterface/report_template.html" with report_dict=handp_report_dict div_id="handp-reports" %}
+        {% include "LEMRinterface/report_template.html" with report_dict=prog_note_dict div_id="progress-notes" %}
+        {% include "LEMRinterface/report_template.html" with report_dict=op_note_dict div_id="op-notes" %}
+        {% include "LEMRinterface/report_template.html" with report_dict=rad_report_dict div_id="rad-reports" %}
+        {% include "LEMRinterface/procedure_template.html" with procedures_dict=procedures2 div_id="procedures" %}
         </div>
 
     </div>

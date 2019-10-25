@@ -1,10 +1,10 @@
 """
-WebEmrGui/models.py
+LEMRinterface/models.py
 version 1.0
 package github.com/ajk77/LEMRinterface
 Modified by AndrewJKing.com|@andrewsjourney
 
-This file is to assist with connecting to the databases specified in WebEmrProject/setting.py. 
+This file is to assist with connecting to the databases specified in LEMRProject/setting.py. 
 
 ---LICENSE---
 This file is part of LEMRinterface
@@ -23,7 +23,7 @@ You should have received a copy of the GNU General Public License
 along with LEMRinterface.  If not, see <https://www.gnu.org/licenses/>.
 """
 
-# models for local_lemr and crisma server's learningemr
+# models for crisma server's learningemr
 # notes are stored locally
 
 from django.db import models
@@ -108,40 +108,44 @@ class a_Medication(models.Model):
         db_table = u'a_Medication'
 
 class a_Micro(models.Model):
-    patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
+    patientvisitid = models.IntegerField(null=False, db_column='PatientVisitID')
     date = models.DateTimeField(null=True, db_column='EventDate', blank=True)
-    eventid = models.IntegerField(primary_key=True, db_column='EventID')
+    eventid = models.IntegerField(null=False, db_column='EventID')
     eventname = models.CharField(max_length=45, db_column='EventName', blank=True)
     accession = models.CharField(max_length=20, db_column='Accession', blank=True)
     source = models.CharField(max_length=35, db_column='Source', blank=True)
     class Meta:
+        unique_together = (("patientvisitid", "date"),)
         db_table = u'a_Micro'
         ordering = ['-date']  # so query is ordered by date, not upk
 
 class a_MicroReport(models.Model):
-    patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
-    eventid = models.IntegerField(primary_key=True, db_column='EventID')
+    patientvisitid = models.IntegerField(null=False, db_column='PatientVisitID')
+    eventid = models.IntegerField(null=False, db_column='EventID')
     accession = models.CharField(max_length=20, db_column='Accession', blank=True)
     text = models.TextField(db_column='MicroReport', blank=True)
     class Meta:
+        unique_together = (("patientvisitid", "eventid"),)
         db_table = u'a_MicroReport'
 
 class a_Surgical(models.Model):
-    patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
-    date = models.IntegerField(primary_key=True, db_column='BegDate')
+    patientvisitid = models.IntegerField(null=False, db_column='PatientVisitID')
+    date = models.IntegerField(null=False, db_column='BegDate')
     primary = models.CharField(max_length=1, db_column='PrimaryProcedure', blank=True)
     procedure = models.CharField(max_length=50, db_column='SurgProcedure', blank=True)
     predx = models.CharField(max_length=60, db_column='PreDx', blank=True)
     postdx = models.CharField(max_length=60, db_column='PostDx', blank=True)
     class Meta:
+        unique_together = (("patientvisitid", "date"),)
         db_table = u'a_Surgical'
 
 class a_Ventilator(models.Model):
-    patientvisitid = models.IntegerField(primary_key=True, db_column='PatientVisitID')
-    date = models.IntegerField(primary_key=True, db_column='EventDate')
+    patientvisitid = models.IntegerField(null=False, db_column='PatientVisitID')
+    date = models.IntegerField(null=False, db_column='EventDate')
     eventname = models.CharField(max_length=20, db_column='EventName', blank=True)
     resultval = models.CharField(max_length=30, db_column='ResultVal', blank=True)
     class Meta:
+        unique_together = (("patientvisitid", "date"),)
         db_table = u'a_Ventilator'
 
 class a_groupmember(models.Model):

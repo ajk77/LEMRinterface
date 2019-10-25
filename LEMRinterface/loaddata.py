@@ -1,5 +1,5 @@
 """
-WebEmrGui/loaddata.py
+LEMRinterface/loaddata.py
 version 1.0
 package github.com/ajk77/LEMRinterface
 Created by AndrewJKing.com|@andrewsjourney
@@ -24,21 +24,21 @@ along with LEMRinterface.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 # crisma server
-from models import a_demographics
-from models import a_ClinicalEvents
-from models import a_HomeMeds
-from models import a_ICDCPT
-from models import a_ICUpatients
-from models import a_IO
-from models import a_Medication
-from models import a_Micro
-from models import a_MicroReport
-from models import a_Surgical
-from models import a_Ventilator
+from LEMRinterface.models import a_demographics
+from LEMRinterface.models import a_ClinicalEvents
+from LEMRinterface.models import a_HomeMeds
+from LEMRinterface.models import a_ICDCPT
+from LEMRinterface.models import a_ICUpatients
+from LEMRinterface.models import a_IO
+from LEMRinterface.models import a_Medication
+from LEMRinterface.models import a_Micro
+from LEMRinterface.models import a_MicroReport
+from LEMRinterface.models import a_Surgical
+from LEMRinterface.models import a_Ventilator
 # local_lemr
-from models import lab_739
+from LEMRinterface.models import lab_739
 
-from utils import *
+from LEMRinterface.utils import *
 
 import os
 import time
@@ -46,11 +46,12 @@ import datetime
 import pickle
 import json
 import unicodedata
-import re  # regex
-import numpy as np
+import re
 
 
 run_queries = True
+save_labs = False
+save_notes = True
 
 if os.path.isdir("../../models/"):
     local_dir = os.getcwd() + "/../../models/"
@@ -385,7 +386,7 @@ def load_meds(case_id, time_cut):
                 elif t > orders[i][1]:
                     orders[i][1] = t
                 if result.route != orders[i][2]:
-                    print "*** WARNING Routes are Different for " + str(order_as) + ' != ' + orders[i][2] + ' ***'
+                    print("*** WARNING Routes are Different for " + str(order_as) + ' != ' + orders[i][2] + ' ***')
                 assert (order_as[0] == orders[i][3])
     # home meds
     if run_queries:
@@ -425,7 +426,7 @@ def load_meds(case_id, time_cut):
                 elif t > orders[i][1]:
                     orders[i][1] = t
                 if result.ordertype != orders[i][2]:
-                    print "*** WARNING Routes are Different for " + str(order_as) + ' != ' + orders[i][2] + ' ***'
+                    print("*** WARNING Routes are Different for " + str(order_as) + ' != ' + orders[i][2] + ' ***')
                 assert (order_as[0] == orders[i][3])
     # process all meds
     for l_id in orders:
@@ -470,7 +471,7 @@ def load_procedures(case_id, time_cut):
                                        + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PostDx: ' + str(result_row.postdx)
                         not_added = False
                 if not_added:
-                    print "***procedure not added to procedures***+\n"+curr_date
+                    print("***procedure not added to procedures***+\n"+curr_date)
     sorted_report_dicts = sorted(report_dicts, key=lambda element: element['date'], reverse=True)
     return sorted_report_dicts
 
@@ -715,7 +716,7 @@ def load_case_date(case_id, out_folder='all/', time_cut=1451688581000):
     rare_types = ['EMG', 'ER', 'LETT', 'PULM', 'CATH', 'NUCLEAR', 'CARD', 'MDX', 'EEG', 'PVL', 'CMORE', 'SP', 'ECHO']
     out_dir = local_dir + 'evaluation_study/' + out_folder
 
-    if 1:  # save notes
+    if save_notes:  # save notes
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
         for note_type in note_types:
@@ -727,7 +728,7 @@ def load_case_date(case_id, out_folder='all/', time_cut=1451688581000):
             curr_data += load_local_report(case_id, time_cut - 18000000, note_type, global_time['min_t'], True)
         pickle.dump(curr_data, open(out_dir + 'other_notes.p', 'wb'))
     
-    if 0:  # save labs
+    if save_labs:  # save labs
         out_dir = local_dir + 'evaluation_study/' + out_folder
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
@@ -790,9 +791,9 @@ def determine_case_times():
             day_diffence = (t_icu_discharge - t_icu_admit) // 86400
             if day_diffence == 2:
                 cut2 = randint(1, day_diffence)
-                print '****** day_difference = 2 here at case: ' + str(case_id)
+                print('****** day_difference = 2 here at case: ' + str(case_id))
             elif day_diffence == 3:
-                print '****** day_difference = 3 here at case: ' + str(case_id)
+                print('****** day_difference = 3 here at case: ' + str(case_id))
                 cut2 = randint(2, day_diffence)
             else:
                 cut2 = randint(3, day_diffence)
@@ -813,7 +814,7 @@ def determine_case_times():
 
         files = ['selections-27AKF', '27ARF']
         for curr_file in files:
-            print 'current file is ' + curr_file
+            print('current file is ' + curr_file)
             with open('$$$$$ENTER PATH FOR CASE ID FILE$$$$$'+curr_file+'.txt', 'r+') as in_file:
                 lines = in_file.readlines()
             out_file = open(local_dir + 'evaluation_study/'+curr_file+'.txt', 'w+')
@@ -829,7 +830,7 @@ def determine_case_times():
 
 
 def update_cases():
-    print '^^^^^^^^^^^^^^^^^^^in update_cases()^^^^^^^^^^^^^^^^^^^^^^^'
+    print('^^^^^^^^^^^^^^^^^^^in update_cases()^^^^^^^^^^^^^^^^^^^^^^^')
 
     def determine_cases(curr_dir, skip_count):
         in_file = open(curr_dir, 'r')
@@ -855,17 +856,18 @@ def update_cases():
     # curr_files = []
 
     for curr_file in curr_files:
-        print '====== ' + curr_file + ' ======'
+        print('====== ' + curr_file + ' ======')
         if curr_file == 'first_four':
             cases, cut_times = determine_cases(local_dir+'/evaluation_study/participant_info/'+curr_file+'.txt', 0)
         else:
             cases, cut_times = determine_cases(local_dir+'/evaluation_study/participant_info/' + curr_file + '.txt', 0)
         for i in range(len(cases)):
-            print 'currently on number ' + str(i)
+            print('currently on number ' + str(i))
             run_queries = True
-            load_case_date(cases[i], 'cases_t1/' + str(cases[i]) + '/', (cut_times[i][0]+28800000))  # add for eight am
+            load_case_date(cases[i], 'cases_t1/' + str(cases[i]) + '/', int(cut_times[i][0]+28800000))
+            # ^added 28800000 for eight am
             run_queries = False
-            load_case_date(cases[i], 'cases_t2/' + str(cases[i]) + '/', (cut_times[i][1]+28800000))  # add for eight am
+            load_case_date(cases[i], 'cases_t2/' + str(cases[i]) + '/', int(cut_times[i][1]+28800000))
             load_case_date(cases[i], 'cases_all/' + str(cases[i]) + '/')
 
     load_global_parameters()
