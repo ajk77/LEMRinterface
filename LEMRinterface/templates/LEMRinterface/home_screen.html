@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .info-div {
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 1200px;
+            background-color: #DCDCDC;
+            text-align: left;
+            border-radius: 3px;
+        }
+        </style>
+
+    <script src="/static/jcode/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        is_full_screen();
+    });
+
+    function is_full_screen(){
+    // +1 is because firefox add an bar of pixel height 1 to the top of full screen that pops down the menu bar
+    // the pop down functionality is disabled when F11 is pressed three times.
+    if(screen.width === window.innerWidth && screen.height === window.innerHeight){
+        $('#fs').hide();
+    }else{
+        $('#fs').show();
+    }}
+    </script>
+
+</head>
+<body bgcolor="#E6E6FA">
+<h1>Welcome to the Learning EMR Evaluation Study</h1>
+<div id="fs"><h2>Please reload in full screen</h2></div>
+<div class="info-div">
+    <p> The goal of the Learning EMR project is to improve the display of EMR data.
+	</p><p> For this study, you are to prepare for and present 18 patient cases as if you were presenting during morning rounds.
+    </p><p> Start by reviewing the Evaluation Study Introduction slides.
+    </p><p> Then, click the interface_demo button to practice using the interface. There will be three cases, one for each interface version.
+    </p><p> Next, calibrate the eye tracking device. If the three red lights are on, press Ctrl + Shift + F10.
+    </p><p> Finally, find the button with your participant code on it and click it to begin.
+</p>
+    <table width="50%" border="1"><tr><th>Participants</th><th>Last Accessed</th><th>Cases Complete</th></tr>
+    {% for user in full %}
+        <tr><th><a href="http://127.0.0.1:8000/LEMRinterface/{{ user.next_case }}/{{ user.user_id }}"><button>{{ user.name }}</button></a> </th><th>{{ user.access }} </th><th> {{ user.count }}</th></tr>
+    {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>

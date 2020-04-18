@@ -1,6 +1,11 @@
 # Don't track content of these folders
 venv/*
 
+SYM_LIST.txt
+manual_input/*.txt
+!manual_input/.gitkeep
+db.*
+
 # Packages #
 .gitconfig
 
