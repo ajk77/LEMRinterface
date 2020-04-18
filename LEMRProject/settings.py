@@ -33,7 +33,9 @@ import json
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-config = json.loads(json.load(open("LEMRProject/config.json", 'r')))
+# Load private configuaration file. (only needed if connecting to a database)
+# ^ if using, you must undate the DATABASES content below. 
+# config = json.loads(json.load(open("LEMRProject/config.json", 'r')))
 
 DEBUG = True
 
