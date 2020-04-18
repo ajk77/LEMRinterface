@@ -30,6 +30,9 @@ along with LEMRinterface.  If not, see <https://www.gnu.org/licenses/>.
 import os
 import json
 
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 config = json.loads(json.load(open("LEMRProject/config.json", 'r')))
 
 DEBUG = True
@@ -41,6 +44,12 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASES = {
+        'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+'''
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': config['default_NAME'],  # Or path to database file if using sqlite3.
@@ -57,7 +66,7 @@ DATABASES = {
         'HOST': config['remote_HOST'],          # Set to empty string for localhost. Not used with sqlite3.
         'PORT': config['remote_PORT'],          # Set to empty string for default. Not used with sqlite3.
     }
-}
+'''
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.4/ref/settings/#allowed-hosts
