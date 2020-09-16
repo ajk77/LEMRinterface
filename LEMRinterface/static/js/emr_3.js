@@ -211,7 +211,6 @@ function note_scroll(curr_id){
 function create_manual_input_post(new_link) {
     if(in_study){
         console.log("-saving manual input-"); // sanity check
-        alert(user_id);
         var csrf_token = getCookie('csrftoken');
         var return_selected_items = '';
         if (study_arm === 'C'){
