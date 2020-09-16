@@ -1,6 +1,6 @@
->>>1592161166.198
-GAMMA,FERITN,PHOS
+>>>1600217217.098
+
 ### difficulty rating ###
-2
+false
 --- has audio recording ---
 0
